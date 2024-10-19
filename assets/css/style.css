@@ -123,16 +123,7 @@ section {
 
 /* For very small screens like mobile phones */
 @media (max-width: 480px) {
-    .landing-heading {
-        font-size: 45px; /* Further reduce the font size */
-    }
 
-    .smile-logo {
-        width: 100px; /* Make the logo smaller */
-        height: 100px;
-        top: 40px; /* Position closer to the text */
-        right: -20px; /* Adjust position accordingly */
-    }
 }
 
 /* Contact Info Section */
@@ -250,35 +241,7 @@ section {
 
 /* Very small screens (below 480px) */
 @media (max-width: 480px) {
-    .info-item img {
-        width: 65px; /* Further reduce icon size */
-        height: 65px;
-    
-    }
-    .info-item i {
-        width: 65px; /* Further reduce icon size */
-        height: 65px;
-    }
-    .info_img_phone_css{
-        margin-left: 10px;
-    }
 
-    .info-text {
-        font-size: 12px; /* Smaller text */
-    }
-
-    .info-text strong {
-        font-size: 14px;
-    }
-
-    .info-subtext {
-        font-size: 10px; /* Adjust subtext for smaller screens */
-    }
-
-    .special_iconCSS{
-        font-size: 65px;
-        padding-right: 80px;
-    }
 }
 
 
@@ -457,6 +420,9 @@ section {
         margin: 0 10px; /* Reduce margin between logos */
     }
 }
+
+
+
 
 /* end slideshow section for brand */
 .number {
@@ -797,25 +763,6 @@ footer p {
     background-color: #0056b3;
 }
 
-@keyframes lineDrawToRight {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 100%;
-    }
-}
-
-@keyframes lineDrawToLeft {
-    0% {
-        right: 100%;
-        width: 0;
-    }
-    100% {
-        right: 0;
-        width: 100%;
-    }
-}
 
 .whatsapp-float {
     position: fixed;
@@ -848,9 +795,93 @@ footer p {
     stroke-dasharray: 0; /* To prevent rendering issues initially */
 }
 
-/* Keyframe Animation */
-@keyframes draw-line {
-    to {
-        stroke-dashoffset: 0;
+.owl-carousel .item img {
+    width: 100%; /* Ensures the image takes up the entire width of the container */
+    height: auto; /* Keeps the aspect ratio */
+    border-radius: 15px; /* Optional: Adds rounded corners */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+@media (max-width:480px){
+    .treatment-item{
+        padding: 25px;
+    }
+    .treatment-item p {
+        font-size: 28px !important;
+    }
+
+    .insta-button{
+        padding: 15px 15px;
+    }
+    .landing-heading {
+        font-size: 45px; /* Further reduce the font size */
+    }
+
+    .smile-logo {
+        width: 100px; /* Make the logo smaller */
+        height: 100px;
+        top: 40px; /* Position closer to the text */
+        right: -20px; /* Adjust position accordingly */
+    }
+    .info-item img {
+        width: 65px; /* Further reduce icon size */
+        height: 65px;
+    
+    }
+    .info-item i {
+        width: 65px; /* Further reduce icon size */
+        height: 65px;
+    }
+    .info_img_phone_css{
+        margin-left: 10px;
+    }
+
+    .info-text {
+        font-size: 12px; /* Smaller text */
+    }
+
+    .info-text strong {
+        font-size: 14px;
+    }
+
+    .info-subtext {
+        font-size: 10px; /* Adjust subtext for smaller screens */
+    }
+
+    .post_slide {
+        margin:40px;
+    }
+    .post_slide .post_slide{
+        height: 350px;
+        width: 250px;
+    }
+
+    .special_iconCSS{
+        font-size: 65px;
+        padding-right: 80px;
+    }
+    .owl-carousel .item{
+        height: 250px !important;
+        padding-bottom: 10px;
+        
+    }
+    .owl-carousel .item img {
+        max-height: 100% !important;;
+        margin: 0 auto; /* Centers the image */
+    }
+    
+    .owl-carousel .item .caption {
+        font-size: 14px !important;
+    }
+
+    .card-content{
+        max-width: 100%;
+    }
+    @keyframes scroll {
+        0% { 
+            transform: translateX(0); 
+        }
+        100% { 
+            transform: translateX(calc(-650px * 7)); 
+        }
     }
 }

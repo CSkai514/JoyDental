@@ -463,13 +463,18 @@
         $('.owl-carousel').owlCarousel({
         loop:true,
         margin:10,
+        center:true,
         nav:true,
         autoplay:true,
         autoplayTimeout:3000,
         autoplayHoverPause:true,
+        responsiveClass:true,
+        autoWidth:true,
+        lazyLoad: true,
+        item:1,
         responsive:{
             0:{
-                items:3
+                items:3,
             },
             600:{
                 items:3
