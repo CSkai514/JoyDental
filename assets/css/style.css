@@ -155,6 +155,7 @@ section {
 .info-item img{
     width: 90px;
     height: 90px;
+    margin-left:-23px;
     margin-right: 20px;
     margin-top: 7px;
 }
@@ -442,12 +443,20 @@ section {
 
 .item-container {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.item_container_div{
+    display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .treatment-item {
-    width: 100%;
+    width: calc(50% - 20px); /* Use calc to account for spacing between items */
     cursor: pointer;
     position: relative;
     padding: 40px;
@@ -459,8 +468,9 @@ section {
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
+    box-sizing: border-box; /* Ensure padding and border don't exceed width */
+    margin-bottom: 20px; /* Space between items */
 }
-
 /* After and Before Pseudo-elements for border animation */
 .treatment-item::after,
 .treatment-item::before {
@@ -827,8 +837,47 @@ footer p {
     text-align: center; /* Center align the text */
     margin-top: 10px; /* Space between image and caption */
 }
+.owl-theme .owl-nav span{
+    font-size: 40px;
+}
+.owl-theme .owl-nav button {
+    font-size: 24px; /* Increase button text/icon size */
+    padding: 10px 20px; /* Add more padding to make the button bigger */
+    width: 50px; /* Set a custom width */
+    height: 50px; /* Set a custom height */
+    border-radius: 50%; /* Make the button circular (optional) */
+    color: #ffca0a !important; /* Custom text/icon color */
+    border: none; /* Remove border */
+    transition: all 0.5s ease-in-out; /* Smooth transition for hover effects */
+}
 
+.owl-carousel .owl-nav i{
+    font-size: 60px;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    margin-right: 30px !important; 
+}
+.owl-carousel .owl-dots{
+    margin-top: 20px !important;
+}
+/* .owl-carousel .owl-nav button.owl-next {
+    margin-right: -30px; 
+} */
+
+/* Optional: Add hover effect */
+.owl-theme .owl-nav button:hover {
+    background-color: transparent !important;
+    color: #e0b109 !important; /* Change text/icon color on hover */
+}
 @media (max-width:480px){
+    .owl-carousel .owl-nav i{
+        font-size: 40px;
+    }
+    .owl-carousel .owl-nav button.owl-prev {
+        margin-right: 15px !important; 
+    }
+
     .treatment-item{
         padding: 25px;
     }
@@ -852,11 +901,12 @@ footer p {
     .info-item img {
         width: 65px; /* Further reduce icon size */
         height: 65px;
-    
+        margin-left: -16px;
     }
     .info-item i {
         width: 65px; /* Further reduce icon size */
         height: 65px;
+        margin-left: -16px;
     }
     .info_img_phone_css{
         margin-left: 10px;
@@ -864,6 +914,7 @@ footer p {
 
     .info-text {
         font-size: 12px; /* Smaller text */
+        padding-left: 20px;
     }
 
     .info-text strong {
