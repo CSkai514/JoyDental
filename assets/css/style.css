@@ -9,7 +9,7 @@ html{
 }
 
 .section_title_sub{
-    color: #ffca0a;
+    color: #002d72;
     font-weight: 700;
     font-size: 25px;
 }
@@ -596,7 +596,7 @@ section {
 }
 
 .hero-subtitle {
-    color: #ffca0a;
+    color: #002d72;
     font-weight: 700;
     font-size: 25px;
     margin-top: 20px; /* Space between title and subtitle */
