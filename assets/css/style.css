@@ -1,0 +1,854 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 50px;
+}
+html{
+    height: 100%;
+  margin: 0;
+}
+
+.section_title_sub{
+    color: #ffca0a;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* Header Wrapper Styles */
+.header_wrapper {
+    background-color: transparent;
+    width: 100%;
+    top: 0;
+    
+}
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures full viewport height */
+  }
+section {
+    padding: 60px 0;
+    overflow: hidden;
+    scroll-margin-top: 70px;
+    overflow: clip;
+  }
+  
+.navbar {
+    margin: 0 2%;
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    width: 96%;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 50px; 
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 0;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Show the dropdown */
+}
+.navbar-logo {
+    height: 130px; /* Adjust this value to fit your desired logo height */
+    width: auto;  /* This will maintain the aspect ratio of the image */
+    max-width: 130px; /* Optional: set a maximum width if needed */
+}
+.hero-section {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .hero-section h1 {
+    font-size: 3rem;
+} */
+
+/* landingpage css */
+/* Landing Page Section Styles */
+.landing-page-section {
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 60px 20px; /* Top/bottom padding, left/right padding */
+    position: relative; /* Make this section relative */
+}
+
+.landing-content {
+    position: relative; /* Make the content relative for absolute positioning */
+    max-width: 1700px; /* Set a max-width */
+    margin: 0 auto; /* Center the content */
+    padding: 0; /* No side padding */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the left */
+}
+
+/* Landing Heading Styles */
+.landing-heading {
+    font-size: 100px;
+    color: #002d72; /* Navy blue */
+    margin-bottom: 10px; 
+    font-weight: 700;
+    position: relative; /* Set position to relative to allow absolute positioning of the image */
+    display: inline-block; /* Make the h1 an inline-block to contain the image properly */
+}
+
+.landing-subheading {
+    font-size: 24px; /* Increased font size */
+    color: #4a4a4a; /* Subheading color */
+    margin-bottom: 20px; /* Margin below subheading */
+}
+.smile-logo {
+    width: 250px; /* Set the desired width */
+    height: 250px; /* Set the desired height */
+    position: absolute; /* Make the image absolute inside the h1 */
+    top: 80px; /* Adjust positioning to place it next to or above the text */
+    right: -70px; /* Position it outside the h1 text content */
+}
+@media (max-width: 768px) {
+    .landing-heading {
+        font-size: 60px; /* Decrease font size on smaller screens */
+    }
+
+    .smile-logo {
+        width: 150px; /* Reduce logo size for mobile */
+        height: 150px;
+        top: 40px; /* Adjust the position of the logo */
+        right: -40px; /* Move the logo closer */
+    }
+}
+
+/* For very small screens like mobile phones */
+@media (max-width: 480px) {
+    .landing-heading {
+        font-size: 45px; /* Further reduce the font size */
+    }
+
+    .smile-logo {
+        width: 100px; /* Make the logo smaller */
+        height: 100px;
+        top: 40px; /* Position closer to the text */
+        right: -20px; /* Adjust position accordingly */
+    }
+}
+
+/* Contact Info Section */
+.contact-info {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: flex-start; /* Align items to the start */
+    margin-top: 40px; /* Margin above the contact info */
+    width: 100%; /* Make sure it takes the full width */
+    gap: 20px; /* Space between items */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Individual Info Item */
+.info-item {
+    display: flex; /* Flexbox for item layout */
+    align-items: center; /* Center the icon and text */
+    width: 100%; /* Full width */
+    flex: 1 1 30%; /* Flexible width, default 30%, allow shrinking */
+    padding: 20px; /* Padding around the item */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.special_iconCSS{
+    font-size: 95px;
+    padding-right: 80px;
+}
+
+.info-item img{
+    width: 90px;
+    height: 90px;
+    margin-right: 20px;
+    margin-top: 7px;
+}
+
+.info-item i {
+    width: 90px; /* Icon width */
+    height: 90px; /* Icon height */
+    margin-right: 20px; /* Space between icon and text */
+}
+
+/* Info Text */
+.info-text {
+    padding-left: 40px;
+    font-size: 16px; /* Main text size */
+    color: #002d72; /* Navy blue text */
+}
+
+.info-text strong {
+    font-size: 18px; /* Slightly larger for emphasis */
+}
+
+.info-subtext {
+    font-size: 14px; /* Subtext size */
+    color: #4a4a4a; /* Subtext color */
+}
+
+/* Divider Between Items */
+.info-divider {
+    height: 120px; /* Adjust height */
+    width: 2px; /* Width for the divider */
+    background-color: #ccc; /* Divider color */
+    margin: 0 10px; /* Space around the divider */
+}
+
+/* Right Image */
+.right-image {
+    max-width: 150%; /* Scale image */
+    height: auto; /* Keep aspect ratio */
+    opacity: 0.6; /* Lower opacity for overlay effect */
+}
+
+/* Responsive styling for screens smaller than 768px */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .info-divider {
+        display: none; /* Hide the divider on smaller screens */
+    }
+
+    .info-item {
+        width: 100%; /* Full width for smaller screens */
+        margin-bottom: 20px; /* Margin below each item */
+    }
+
+    .info-item img, 
+    .info-item i {
+        width: 50px; /* Adjust icon size */
+        height: 50px; /* Adjust icon size */
+        margin-right: 15px; /* Adjust margin for smaller screens */
+    }
+
+    .info-text {
+        font-size: 14px; /* Smaller text size */
+    }
+
+    .info-text strong {
+        font-size: 16px; /* Adjusted strong text size */
+    }
+
+    .info-subtext {
+        font-size: 12px; /* Smaller subtext size */
+    }
+
+    .image-container {
+        text-align: center; /* Center the image */
+        margin-top: 20px; /* Space above the image */
+        position: relative; /* Reset for smaller screens */
+        z-index: 0; /* Ensure it's below other elements */
+    }
+}
+
+/* Very small screens (below 480px) */
+@media (max-width: 480px) {
+    .info-item img {
+        width: 65px; /* Further reduce icon size */
+        height: 65px;
+    
+    }
+    .info-item i {
+        width: 65px; /* Further reduce icon size */
+        height: 65px;
+    }
+    .info_img_phone_css{
+        margin-left: 10px;
+    }
+
+    .info-text {
+        font-size: 12px; /* Smaller text */
+    }
+
+    .info-text strong {
+        font-size: 14px;
+    }
+
+    .info-subtext {
+        font-size: 10px; /* Adjust subtext for smaller screens */
+    }
+
+    .special_iconCSS{
+        font-size: 65px;
+        padding-right: 80px;
+    }
+}
+
+
+/* end landingpage css */
+
+/* Card Styles */
+.card {
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Increase border-radius for smoother corners */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition */
+    background-color: #fff; /* Light background color */
+}
+
+/* Hover effect to make the card larger and shadow more prominent */
+.card:hover {
+    transform: translateY(-10px); /* Lift the card up slightly */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    background-color: #e1e1e1; /* Change background to pure white on hover */
+}
+
+/* Card title styling */
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #002d72; /* Navy blue for titles */
+    margin-bottom: 15px;
+}
+
+/* Card text styling */
+.card-text {
+    font-size: 16px;
+    color: #4a4a4a; /* Darker gray for text */
+}
+
+/* Image inside card */
+.card-img-top {
+    width: auto;
+    margin-right: 10px; /* Space between images */
+}
+.card-body {
+    height: 180px; /* Set a fixed height for the card body */
+}
+
+/* Responsive design for cards */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 40px; /* Reduce image height on smaller screens */
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+}
+
+.video-container {
+    position: relative;
+    margin-top: 80px;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: #000; /* Optional: to give a black background */
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* slideshow section for brand */
+/* Basic section styling */
+.slider {
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    width: calc(250px * 14);
+}
+
+.slider .slide {
+    height: 100px;
+    width: 250px;
+}
+.logo-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensure images fit without distortion */
+    border-radius: 15px;
+    overflow: hidden; 
+}
+
+.post_slide {
+    height: 550px; /* Adjust height for the image */
+    margin: auto;
+    /* overflow: hidden; */
+    position: relative;
+    width: 100%;
+}
+
+.post_slide .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    width: calc(350px * 14); /* Adjust according to image size */
+}
+
+.post_slide .post_slide {
+    height: 450px; /* Same height as the post_slide container */
+    width: 400px; /* Adjust width for images */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-container {
+    text-align: center; /* Centers the button horizontally */
+    margin-top: 20px; /* Adds space above the button */
+}
+
+.insta-button {
+    display: inline-block;
+    background-color: #ffca0a; /* Blue color */
+    color: white;
+    font-size: 20px;
+    padding: 30px 30px;
+    border-radius: 50px; /* Rounded corners */
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.insta-button:hover {
+    background-color: #d7aa07; /* Darker blue on hover */
+}
+
+.insta-button::after {
+    content: '→'; /* Adds arrow after the text */
+    padding-left: 5px;
+}
+/* Ensure all images are responsive and maintain the same size */
+.logo-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensure images fit without distortion */
+}
+.post_slide:hover .slide-track {
+    animation-play-state: paused; /* Pauses the animation on hover */
+}
+
+@keyframes scroll {
+    0% { 
+        transform: translateX(0); 
+    }
+    100% { 
+        transform: translateX(calc(-250px * 7)); 
+    }
+}
+
+/* Smaller screens - adjust logo size and spacing */
+@media (max-width: 768px) {
+    .logo-items i {
+        font-size: 6vw; /* Increase size for smaller screens */
+        margin: 0 10px; /* Reduce margin between logos */
+    }
+}
+
+/* end slideshow section for brand */
+.number {
+    font-weight: bold;
+    margin-right: 10px; /* Adjust spacing between number and image */
+    color: #ffca0a;
+    font-size: 30px;
+    padding-right: 20px;
+
+}
+
+/* Change the color of the number on item hover */
+.treatment-item:hover .number {
+    color: #fff; /* Change to your desired hover color when the item is hovered */
+
+}
+
+.item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.treatment-item {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    padding: 40px;
+    background: white;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 1s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* After and Before Pseudo-elements for border animation */
+.treatment-item::after,
+.treatment-item::before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 1s ease-in-out;
+    border-radius: 10px; /* Added rounded corners for border */
+}
+
+/* Top-left corner border */
+.treatment-item::after {
+    top: -1px;
+    left: -1px;
+    border-top: 5px solid #ebb801;
+    border-left: 5px solid #ebb801;
+}
+
+/* Bottom-right corner border */
+.treatment-item::before {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 5px solid #ebb801;
+    border-right: 5px solid #ebb801;
+}
+
+/* Hover effect for background and border animation */
+.treatment-item:hover {
+    border-top-right-radius: 10px; /* Keep rounded corners on hover */
+    border-bottom-left-radius: 10px;
+    background-color: #ffca0a;
+    color: #fff;
+}
+
+/* Expand borders on hover */
+.treatment-item:hover::before,
+.treatment-item:hover::after {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; /* Keep the border rounded when expanded */
+}
+
+
+.treatment-item img {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px;
+    margin-right: 30px; /* Space between image and text */
+}
+
+.treatment-item p {
+    font-size: 38px;
+    text-align: left; /* Align text to the left */
+    color: #002d72; /* Set text color to black */
+    flex: 1; /* Allow the text to grow and fill available space */
+}
+
+.treatment-item i {
+    font-size: 58px;
+    flex: 1; /* Allow the text to grow and fill available space */
+}
+
+.icon {
+    opacity: 0; /* Initially hidden */
+    transform: translateX(30px); /* Start slightly to the right */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Increase transition duration */
+    margin-left: 10px; /* Space between text and icon */
+}
+
+/* Show icon on hover */
+.treatment-item:hover .icon {
+    opacity: 1; /* Show icon on hover */
+    transform: translateX(0); /* Move to original position */
+}
+
+.separator {
+    border-bottom: 2px solid #ffca0a; /* Add a bottom border for separation */
+    margin: 20px 0;
+    width: 100%;
+}
+
+
+
+
+/* accodition */
+.accordion-item {
+    margin-bottom: 10px; /* Space between sections */
+}
+
+.accordion-header {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center items vertically */
+    padding: 15px;
+    cursor: pointer;
+    position: relative; /* Position for the pseudo-element */
+    background-color: transparent; /* Default background color */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    border-bottom: 1px solid #ccc; /* Add bottom border only */
+}
+
+.accordion-header:hover {
+    background-color: #ffca0a; /* Change color on hover */
+}
+
+.icon {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for icon */
+    margin-left: auto; /* Push icon to the right */
+}
+
+.accordion-header:hover .icon {
+    opacity: 1; /* Show icon on hover */
+    transform: translateX(5px); /* Slide icon to the right slightly */
+}
+/* end */
+
+.hero-section {
+    background-color: #e5f7ff; /* Light background color */
+    padding: 50px 0; /* Vertical padding */
+}
+
+.hero-content {
+    max-width: 800px; /* Set a maximum width */
+    margin: 0 auto; /* Center the content */
+}
+
+.hero-title {
+    font-size: 5rem;
+    font-weight: 700; /* Make the font bold */
+    color: #002147; /* Dark color for text */
+    margin: 0; /* Remove default margin */
+}
+
+.hero-subtitle {
+    font-size: 1.5rem; /* Adjust subtitle size */
+    color: #002147; /* Dark color for text */
+    margin-top: 20px; /* Space between title and subtitle */
+}
+
+.services-section .service-box {
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tulen-dental-container {
+    background-color: #f8f9fa; /* Light background for the section */
+    padding: 30px; /* Padding around the section */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.tulen-dental-container .icon img {
+    display: block; /* Center the icon */
+    margin: 0 auto; /* Center the icon */
+}
+
+.tulen-dental-container .feature-number {
+    font-size: 2rem; /* Adjust number size */
+    font-weight: bold; /* Bold for emphasis */
+    margin-top: 15px; /* Spacing above number */
+}
+
+.tulen-dental-container .feature-title {
+    font-size: 1.25rem; /* Title size */
+    font-weight: 600; /* Medium bold */
+    margin-top: 10px; /* Spacing above title */
+}
+
+.tulen-dental-container .feature-description {
+    font-size: 1rem; 
+    margin-top: 10px;
+    color: #555; 
+    line-height: 1.5; 
+}
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .slide img {
+    width: 500px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    margin: 10px;
+  }
+  
+  .text {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .text h3 {
+    font-size: 24px;
+  }
+  
+  .text p {
+    font-size: 18px;
+  }
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+footer p {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.find_us-card {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    background: url('../image/promote_img3.jpg') no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+
+}
+
+.card-content {
+    max-width: 50%;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative; /* For stacking with SVG */
+    z-index: 1; /* Bring content on top of SVG */
+    color: #002d72;
+}
+
+.card-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    color: #002d72;
+}
+
+/* .card-content h1::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #83ECEC;
+    animation: lineDrawToRight 0.8s ease-out
+}
+
+.card-content h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #83ECEC;
+    animation: lineDrawToLeft 0.8s ease-out;
+} */
+
+/* Paragraph Styling */
+.card-content p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #555;
+}
+
+/* Button Styling */
+.explore-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffca0a;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+    padding: 20px;
+}
+
+.explore-btn:hover {
+    background-color: #0056b3;
+}
+
+@keyframes lineDrawToRight {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes lineDrawToLeft {
+    0% {
+        right: 100%;
+        width: 0;
+    }
+    100% {
+        right: 0;
+        width: 100%;
+    }
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.whatsapp-float i {
+    font-size: 32px;
+    color: #25D366;
+}
+/* SVG Path Styling */
+.animated-line {
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    overflow: visible;
+    stroke-dasharray: 0; /* To prevent rendering issues initially */
+}
+
+/* Keyframe Animation */
+@keyframes draw-line {
+    to {
+        stroke-dashoffset: 0;
+    }
+}

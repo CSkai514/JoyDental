@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Joy Dental</title>
+    <!-- Bootstrap CSS -->
+    <link href="assets/img/favicon-16x16.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+.owl-carousel .item {
+    width: 100%; 
+    height: 550px; /* Adjust based on your design */
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Styling the images */
+.owl-carousel .item img {
+    max-width: 100%;
+    max-height: 70%; /* Adjust based on your design */
+    object-fit: contain;
+}
+
+/* Styling the caption */
+.owl-carousel .item .caption {
+    font-size: 16px; /* Caption font size */
+    font-weight: 600; /* Slightly bold */
+    color: #333; /* Text color */
+    text-align: center; /* Center align the text */
+    margin-top: 10px; /* Space between image and caption */
+}
+
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- Header Wrapper -->
+    <div class="header_wrapper">  <!-- Added wrapper for the navbar -->
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <!-- <a class="navbar-brand" href="#" style="color:#ffca0a; padding-right: 60px;">Joy Dental</a> -->   
+                 <a  class="navbar-brand" href="#" style="padding-right: 15px;">
+                <img src="assets/image/joydental_image_logo.png" alt="Joy Dental Logo" class="navbar-logo">                
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">About</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Treatment
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Braces</a></li>
+                            <li><a class="dropdown-item" href="#">Teeth Whitening</a></li>
+                            <li><a class="dropdown-item" href="#">Scaling & Polishing</a></li>
+                            <li><a class="dropdown-item" href="#">Cosmetic Dentistry</a></li>
+                            <li><a class="dropdown-item" href="#">Dental Veneers</a></li>
+                            <li><a class="dropdown-item" href="#">Fillings</a></li>
+                            <li><a class="dropdown-item" href="#">Root Canal Treatment</a></li>
+                            <li><a class="dropdown-item" href="#">Crown & Bridge</a></li>
+                            <li><a class="dropdown-item" href="#">Dental Implant</a></li>
+                            <li><a class="dropdown-item" href="#">Wisdom Teeth Removal</a></li>
+                            <li><a class="dropdown-item" href="#">Denture</a></li>
+                            <li><a class="dropdown-item" href="#">Teeth Extraction</a></li>
+                        </ul>
+                    </li>                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Location</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- <img src="assets/image/joydental_image_logo_smileOnly.png" width="250px;" height="250px"> -->
+    <section class="landing-page-section">
+        <div class="landing-content">
+            <h1 class="landing-heading">Healthy Smile,<br> Happy Life 
+                <img src="assets/image/joydental_image_logo_smileOnly.png" class="smile-logo" alt="Smile Logo">
+            </h1>
+            <p class="landing-subheading">Maintain your beautiful and healthy smile with us.</p> 
+    
+            <div class="contact-info">
+                <div class="info-item">
+                    <!-- <i class="bi bi-telephone" ></i> -->
+                    <!-- <i class="bi bi-telephone-fill" style="font-size: 80px; padding-left: 40px; padding-right: 60px; color:#ffca0a;"></i> -->
+                     <img src="assets/image/telephone_724664.png"  alt="">
+                    <div class="info-text info_img_phone_css">
+                        <strong>Call us at</strong><br>
+                        +010-719 8150<br>
+                        <span class="info-subtext ">Our staff is always ready to help you.</span>
+                    </div>
+                </div>
+    
+                <div class="info-divider"></div>
+    
+                <div class="info-item">
+                    <i class="fa-solid fa-clock special_iconCSS" style="color: #6f6f6f;;"></i>
+                    <div class="info-text">
+                        <strong>Operating hours</strong><br>
+                        10 am–1 pm, 2–6 pm<br>
+                        <span class="info-subtext">We operate from 10am-1pm, 2pm-6pm Mon-Sun, Wednesday closed</span>
+                    </div>
+                </div>
+    
+                <div class="info-divider"></div>
+    
+                <div class="info-item"> 
+                    <i class="fa-brands fa-square-whatsapp special_iconCSS" style="color:#25D366;"></i>
+                    <!-- <i class="fa-brands fa-whatsapp" style="font-size: 80px; padding-left: 40px; padding-right: 60px;color:#ffca0a;"></i> -->
+                    <div class="info-text">
+                        <strong>Book an appointment</strong><br>
+                        <span class="info-subtext">Just click on the WhatsApp to book an appointment with us.</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Image of the Woman -->
+            <div class="image-container">
+                <!-- <img src="assets/image/joydental_image_logo.png" alt="Logo" class="right-image" width="40%"> -->
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container my-5">
+            <p class="hero-subtitle text-center" style="color: #ffca0a;">We Joy Dental</p>
+            <h2 class="text-center">Primary care options for quality dental care</h2>
+            <p class="text-center">We provide high-quality dental care at affordable prices in a friendly and relaxed atmosphere, ensuring your safety and comfort throughout treatment.</p>
+    
+            <!-- Responsive Video Embed -->
+            <div class="video-container">
+                <video autoplay muted controls>
+                    <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="logo-slider-section h-100">
+                <div class="logo-slider-container h-100">
+                    <div class="logo-slider-wrapper rounded">
+                        <h1 class="text-center" style="padding-bottom: 30px;">Our panel:</h1>
+                        <div class="slider">
+                            <div class="slide-track">
+                                <div class="slide">
+                                    <i class="fab fa-js fa-4x"></i>
+                                </div>
+                                <div class="slide">
+                                    <i class="fab fa-linkedin-in fa-4x"></i>
+                                </div>
+                                <div class="slide">
+                                    <i class="fab fa-dribbble fa-4x"></i>
+                                </div>
+                                <div class="slide">
+                                    <i class="fab fa-medium-m fa-4x"></i>
+                                </div>
+                                <div class="slide">
+                                    <i class="fab fa-github fa-4x"></i>
+                                </div>
+                                <div class="slide">
+                                    <i class="fab fa-js fa-4x"></i>
+                                </div>
+                                <div class="slide">
+                                    <i class="fab fa-linkedin-in fa-4x"></i>
+                                </div>
+                                <div class="slide">
+                                    <i class="fab fa-dribbble fa-4x"></i>
+                                </div>
+                                <div class="slide">
+                                    <i class="fab fa-medium-m fa-4x"></i>
+                                </div>
+                                <div class="slide">
+                                    <i class="fab fa-github fa-4x"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container item-container">
+            <p class="section_title_sub">Treatment</p>
+            <h1 >We cater to all your dental needs</h1>
+            <div class="treatment-item" onclick="window.location.href='#';">
+                <span class="number">01</span>
+                <img src="assets/image/teeth_braces.png" alt="Braces Icon">
+                <p>Braces</p>
+                <span class="icon"><i class="bi bi-arrow-up-right-square-fill"></i></span> <!-- Updated icon -->
+            </div>
+            <div class="separator"></div>
+            
+            <div class="treatment-item" onclick="window.location.href='#';">
+                <span class="number">02</span>
+                <img src="assets/image/teeth_clean.png" alt="Teeth Whitening Icon">
+                <p>Teeth Whitening</p>
+                <span class="icon"><i class="bi bi-arrow-up-right-square-fill"></i></span> <!-- Updated icon -->
+            </div>
+            <div class="separator"></div>
+            
+            <div class="treatment-item" onclick="window.location.href='#';">
+                <span class="number">03</span>
+                <img src="assets/image/electric-toothbrush_15537822.png" alt="Scaling & Polishing Icon">
+                <p>Scaling & Polishing</p>
+                <span class="icon"><i class="bi bi-arrow-up-right-square-fill"></i></span> <!-- Updated icon -->
+            </div>
+            <div class="separator"></div>
+            
+            <div class="treatment-item" onclick="window.location.href='#';">
+                <span class="number">04</span>
+                <img src="assets/image/teeth_cosmetic_dentistry.png" alt="Cosmetic Dentistry Icon">
+                <p>Cosmetic Dentistry</p>
+                <span class="icon"><i class="bi bi-arrow-up-right-square-fill"></i></span> <!-- Updated icon -->
+            </div>
+            <div class="separator"></div>
+            
+            <div class="treatment-item" onclick="window.location.href='#';">
+                <span class="number">05</span>
+                <img src="assets/image/teeth_Dental_veneers.png" alt="Dental Veneers Icon">
+                <p>Dental Veneers</p>
+                <span class="icon"><i class="bi bi-arrow-up-right-square-fill"></i></span> <!-- Updated icon -->
+            </div>
+            <div class="separator"></div>
+            
+            <div class="treatment-item" onclick="window.location.href='#';">
+                <span class="number">06</span>
+                <img src="assets/image/tooth_Fillings.png" alt="Fillings Icon">
+                <p>Fillings</p>
+                <span class="icon"><i class="bi bi-arrow-up-right-square-fill"></i></span> <!-- Updated icon -->
+            </div>
+            <div class="separator"></div>
+            
+            <div class="treatment-item" onclick="window.location.href='#';">
+                <span class="number">07</span>
+                <img src="assets/image/Teeth-root-canal.png" alt="Root Canal Treatment Icon">
+                <p>Root Canal Treatment</p>
+                <span class="icon"><i class="bi bi-arrow-up-right-square-fill"></i></span> <!-- Updated icon -->
+            </div>
+            <div class="separator"></div>
+            
+            <div class="treatment-item" onclick="window.location.href='#';">
+                <span class="number">08</span>
+                <img src="assets/image/teeth_Crown&Bridge.png" alt="Crown & Bridge Icon">
+                <p>Crown & Bridge</p>
+                <span class="icon"><i class="bi bi-arrow-up-right-square-fill"></i></span> <!-- Updated icon -->
+            </div>
+            <div class="separator"></div>
+            
+            <div class="treatment-item" onclick="window.location.href='#';">
+                <span class="number">09</span>
+                <img src="assets/image/teeth_implant.png" alt="Dental Implant Icon">
+                <p>Dental Implant</p>
+                <span class="icon"><i class="bi bi-arrow-up-right-square-fill"></i></span> <!-- Updated icon -->
+            </div>
+            <div class="separator"></div>
+            
+            <div class="treatment-item" onclick="window.location.href='#';">
+                <span class="number">10</span>
+                <img src="assets/image/tooth-remove.png" alt="Wisdom Teeth Removal Icon">
+                <p>Wisdom Teeth Removal</p>
+                <span class="icon"><i class="bi bi-arrow-up-right-square-fill"></i></span> <!-- Updated icon -->
+            </div>
+            <div class="separator"></div>
+            
+            <div class="treatment-item" onclick="window.location.href='#';">
+                <span class="number">11</span>
+                <img src="assets/image/teeth_Denture.png" alt="Denture Icon">
+                <p>Denture</p>
+                <span class="icon"><i class="bi bi-arrow-up-right-square-fill"></i></span> <!-- Updated icon -->
+            </div>
+            <div class="separator"></div>
+            
+            <div class="treatment-item" onclick="window.location.href='#';">
+                <span class="number">12</span>
+                <img src="assets/image/tooth-extraction.png" alt="Teeth Extraction Icon">
+                <p>Teeth Extraction</p>
+                <span class="icon"><i class="bi bi-arrow-up-right-square-fill"></i></span> <!-- Updated icon -->
+            </div>
+        </div>
+    </section>
+    
+    <section style="background-color: #f0f8ff;">
+        <p class="text-center section_title_sub" style="padding-bottom: 40px;">Our Flexible Payment Options</p>
+        <div class="container">
+            
+            <div class="row">
+               
+                <!-- First Card -->
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Pay Now with Credit Card</h5>
+                            <p class="card-text">
+                                <img src="assets/image/Visa_Brandmark_Blue_RGB_2021.png" alt="VISA Logo" class="card-img-top" style="height: 45px;">
+                                <img src="assets/image/mc_symbol_opt_73_3x.png" alt="Mastercard Logo" class="card-img-top" style="height: 85px;">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Second Card -->
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Pay Later with 4 Interest-Free Installments</h5>
+                            <p class="card-text">
+                                <img src="https://cdn.brandfetch.io/idaUk7W361/w/800/h/151/theme/dark/logo.png?k=bfHSJFAPEG" alt="atome" class="card-img-top" style="height: 55px;">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <h1 class="text-center" style="padding-bottom: 10px; color: #ffca0a; ">Our result from actual person</h1>
+        <!-- <p class="text-center section_title_sub" style="padding-bottom: 20px;">Our result </p> -->
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="assets/image/joydental_image_logo.jpg" alt="">
+                <p class="caption">Healthy Smile Promotion</p>
+            </div>
+            <div class="item">
+                <img src="assets/image/promote_img1.jpg" alt="">
+                <p class="caption">Veneers</p>
+            </div>
+            <div class="item">
+                <img src="assets/image/promote_img2.jpg" alt="">
+                <p class="caption">Braces</p>
+            </div>
+            <div class="item">
+                <img src="assets/image/review_photo1.jpg" alt="">
+                <p class="caption">Healthy Smile Promotion</p>
+            </div>
+            <div class="item"><img src="assets/image/promote_img3.jpg" alt="">
+                <p class="caption">Our clinic</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: #f0f8ff;">
+        <div class="container" >
+            <div class="post-slider-section h-100">
+                <div class="post-slider-container h-100">
+                    <div class="post-slider-wrapper rounded">
+                        <h1 class="text-center" style="padding-bottom: 30px; color: #002d72;">Join Our Community</h1>
+                        <div class="button-container">
+                            <a href="https://www.instagram.com/klinikpergigian.joydental/?hl=en" class="insta-button" target="_blank">
+                                @klinikpergigian.joydental
+                            </a>
+                        </div>
+                        <div class="post_slide">
+                            <div class="slide-track">
+                                <div class="post_slide">
+                                    <img src="assets/image/joydental_image_logo.jpg" class="logo-img" alt="Logo 1">
+                                </div>
+                                <div class="post_slide">
+                                    <img src="assets/image/promote_img1.jpg" class="logo-img" alt="Logo 2">
+                                </div>
+                                <div class="post_slide">
+                                    <img src="assets/image/promote_img2.jpg" class="logo-img" alt="Logo 3">
+                                </div>
+                                <div class="post_slide">
+                                    <img src="assets/image/joydental_image_logo.jpg" class="logo-img" alt="Logo 4">
+                                </div>
+                                <div class="post_slide">
+                                    <img src="assets/image/joydental_image_logo.jpg" class="logo-img" alt="Logo 5">
+                                </div>
+                                <!-- Repeat the images for infinite scrolling effect -->
+                                <div class="post_slide">
+                                    <img src="assets/image/joydental_image_logo.jpg" class="logo-img" alt="Logo 1">
+                                </div>
+                                <div class="post_slide">
+                                    <img src="assets/image/promote_img1.jpg" class="logo-img" alt="Logo 2">
+                                </div>
+                                <div class="post_slide">
+                                    <img src="assets/image/promote_img2.jpg" class="logo-img" alt="Logo 3">
+                                </div>
+                                <div class="post_slide">
+                                    <img src="assets/image/joydental_image_logo.jpg" class="logo-img" alt="Logo 4">
+                                </div>
+                                <div class="post_slide">
+                                    <img src="assets/image/joydental_image_logo.jpg" class="logo-img" alt="Logo 5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="find_us-card">
+        <div class="card-content">
+            <h1>Find Our Nearest clinic</h1>
+            <p>Visit our website to find the Clinic closest to you. Click here for more information!</p>
+            <a href="#" class="explore-btn">Explore Location →</a>
+        </div>
+    </section>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/yourphonenumber" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-square-whatsapp" style="color: #25D366;"></i>
+    </a>
+    
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2024 Clinic. All Rights Reserved.</p>
+        <p>Icons made by <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer">Freepik</a> from <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer">www.freepik.com</a></p>
+    </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // Prevent dropdown from closing on click
+      document.querySelectorAll('.dropdown-menu').forEach(function(dropdown) {
+          dropdown.addEventListener('click', function(event) {
+              event.stopPropagation();
+          });
+      });
+      document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', function () {
+        const content = this.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
+  </script>
+  <script>
+    $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        responsive:{
+            0:{
+                items:3
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:3
+            }
+        }
+    })
+});
+  </script>
+</body>
+</html>
