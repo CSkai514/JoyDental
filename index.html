@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
 </head>
 <body>
     <div class="content-wrapper">
@@ -57,9 +58,9 @@
                             <li><a class="dropdown-item coming-soon-btn" href="#">Denture</a></li>
                             <li><a class="dropdown-item coming-soon-btn" href="#">Teeth Extraction</a></li>
                         </ul>
-                    </li>                        
+                    </li>        
                         <li class="nav-item">
-                            <a class="nav-link coming-soon-btn" href="#">Location</a>
+                            <a class="nav-link coming-soon-btn location_navBTN" href="#">Location</a>
                         </li>
                     </ul>
                 </div>
@@ -74,7 +75,7 @@
             <p class="landing-subheading">Maintain your beautiful and healthy smile with us.</p> 
     
             <div class="contact-info">
-                <div class="info-item">
+                <div class="info-item" data-aos="fade-right" data-aos-delay="300">
                      <img src="assets/image/telephone_724664.png"  alt="">
                     <div class="info-text info_img_phone_css">
                         <strong>Call us at</strong><br>
@@ -85,7 +86,7 @@
     
                 <div class="info-divider"></div>
     
-                <div class="info-item">
+                <div class="info-item" data-aos="fade-up" data-aos-delay="300">
                     <i class="fa-solid fa-clock special_iconCSS" style="color: #6f6f6f;;"></i>
                     <div class="info-text">
                         <strong>Operating hours</strong><br>
@@ -96,7 +97,7 @@
     
                 <div class="info-divider"></div>
     
-                <div class="info-item"> 
+                <div class="info-item" data-aos="fade-left" data-aos-delay="300"> 
                     <i class="fa-brands fa-square-whatsapp special_iconCSS" style="color:#25D366;"></i>
                     <div class="info-text">
                         <strong>Book an appointment</strong><br>
@@ -114,10 +115,10 @@
     
     <section>
         <div class="container my-5">
-            <p class="hero-subtitle text-center ">We Joy Dental</p>
-            <h2 class="text-center" style="color: #ffca0a; font-weight: 600; font-size: 60px;">Primary care options for quality dental care</h2>
+            <p class="hero-subtitle text-center" data-aos="flip-right" data-aos-delay="300">We Joy Dental</p>
+            <h2 class="text-center h1_title_we" data-aos="flip-left" data-aos-delay="300">Primary care options for quality dental care</h2>
             <br>
-            <p class="text-center" style="font-size: 18px;">We provide high-quality dental care at affordable prices in a friendly and relaxed atmosphere, ensuring your safety and comfort throughout treatment.</p>
+            <p class="text-center" style="font-size: 18px;" data-aos="zoom-out" data-aos-delay="300">We provide high-quality dental care at affordable prices in a friendly and relaxed atmosphere, ensuring your safety and comfort throughout treatment.</p>
     
             <!-- Responsive Video Embed -->
             <div class="video-container">
@@ -177,8 +178,8 @@
 
     <section>
         <div class="container item_container_div">
-            <p class="section_title_sub">Treatment</p>            
-            <h1 style="color: #ffca0a;font-weight: 600; font-size: 60px; padding-bottom: 60px;">We cater to all your dental needs</h1>
+            <p class="section_title_sub"  data-aos="zoom-in" data-aos-delay="200">Treatment</p>            
+            <h1 class="treatment_h1_title" data-aos="flip-left" data-aos-delay="300">We cater to all your dental needs</h1>
             <div class="item-container"> 
                 <div class="treatment-item" onclick="window.location.href='#';">
                     <span class="number">01</span>
@@ -265,13 +266,13 @@
     </section>
     
     <section style="background-color: #f0f8ff;">
-        <h1 class="text-center" style="color: #ffca0a;font-weight: 600; font-size: 50px;padding-bottom: 40px;">Our Flexible Payment Options</h1>
+        <h1 class="text-center payment_h1_title" data-aos="zoom-in" data-aos-delay="300">Our Flexible Payment Options</h1>
         <div class="container">
             
             <div class="row">
                
                 <!-- First Card -->
-                <div class="col-md-6 mb-4">
+                <div class="col-md-6 mb-4" data-aos="slide-right" data-aos-delay="300">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Pay Now with Credit Card</h5>
@@ -284,7 +285,7 @@
                 </div>
     
                 <!-- Second Card -->
-                <div class="col-md-6 mb-4">
+                <div class="col-md-6 mb-4" data-aos="slide-left" data-aos-delay="300">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Pay Later with 4 Interest-Free Installments</h5>
@@ -300,7 +301,7 @@
     
     <section>
         <p class="hero-subtitle text-center ">Treatment Result</p>
-        <h1 class="text-center" style="color: #ffca0a;font-weight: 600; font-size: 50px;padding-bottom: 30px;">Our result from actual person</h1>
+        <h1 class="text-center payment_h1_title">Our result from actual person</h1>
         <div class="owl-carousel owl-theme">
             <div class="item">
                 <img src="assets/image/joydental_image_logo.jpg" alt="">
@@ -329,8 +330,8 @@
             <div class="post-slider-section h-100">
                 <div class="post-slider-container h-100">
                     <div class="post-slider-wrapper rounded">
-                        <p class="hero-subtitle text-center ">Our Community</p>
-                        <h1 class="text-center" style="color: #ffca0a;font-weight: 600; font-size: 50px;padding-bottom: 30px;">Join Our Community</h1>
+                        <p class="hero-subtitle text-center " data-aos="zoom-in" data-aos-delay="400">Our Community</p>
+                        <h1 class="text-center" style="color: #ffca0a;font-weight: 600; font-size: 50px;padding-bottom: 30px;" data-aos="flip-right" data-aos-delay="400">Join Our Community</h1>
                         <div class="button-container">
                             <a href="https://www.instagram.com/klinikpergigian.joydental/?hl=en" class="insta-button" target="_blank">
                                 @klinikpergigian.joydental
@@ -378,7 +379,7 @@
     </section>
     
     <section class="find_us-card">
-        <div class="card-content">
+        <div class="card-content" data-aos="slide-right" data-aos-delay="500">
             <h1>Find Our Nearest clinic</h1>
             <p>Visit our website to find the Clinic closest to you. Click here for more information!</p>
             <a href="#" class="explore-btn coming-soon-btn">Explore Location →</a>
@@ -396,10 +397,12 @@
         <p>Icons made by <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer">Freepik</a> from <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer">www.freepik.com</a></p>
     </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
 
     <script>
       // Prevent dropdown from closing on click
@@ -412,10 +415,10 @@
     header.addEventListener('click', function () {
         const content = this.nextElementSibling;
         content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        });
     });
-});
 
-  </script>
+    </script>
 <script>
     $(document).ready(function(){
         $('.owl-carousel').owlCarousel({
@@ -448,9 +451,18 @@
     });
 </script>
 <script>
-    document.querySelectorAll('.coming-soon-btn').forEach(function(button) {
+    AOS.init({
+        duration: 1000, // Animation duration in milliseconds
+        once: true, // Whether animation should happen only once - while scrolling down
+    });
+</script>
+<script>
+document.querySelectorAll('.coming-soon-btn').forEach(function(button) {
     button.addEventListener('click', function(e) {
-        e.preventDefault(); // Prevent any default action (if a link)
+        // Check if the element is inside a dropdown, prevent navigation but not the toggle
+        if (button.closest('.dropdown-menu')) {
+            e.preventDefault(); // Prevent navigation if a dropdown item
+        }
         Swal.fire({
             title: 'Coming Soon!',
             text: 'This feature is not yet available.',

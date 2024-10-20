@@ -34,11 +34,11 @@ section {
   }
   
 .navbar {
-    margin: 0 2%;
+    /* margin: 0 2%; */
     position: fixed;
     z-index: 1000; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
-    width: 96%;
+    width: 100%;
     max-height: 115px;
     font-size: 18px;
 }
@@ -58,9 +58,7 @@ section {
 .navbar-nav .nav-item:last-child {
     margin-right: 0;
 }
-.nav-item.dropdown:hover .dropdown-menu {
-    display: block; /* Show the dropdown */
-}
+
 .navbar-logo {
     height: 130px; /* Adjust this value to fit your desired logo height */
     width: auto;  /* This will maintain the aspect ratio of the image */
@@ -120,6 +118,7 @@ section {
 @media (max-width: 768px) {
     .landing-heading {
         font-size: 60px; /* Decrease font size on smaller screens */
+        margin-top: 140px;
     }
 
     .smile-logo {
@@ -127,6 +126,9 @@ section {
         height: 150px;
         top: 40px; /* Adjust the position of the logo */
         right: -40px; /* Move the logo closer */
+    }
+    .hero-title{
+            font-size: 3rem !important;
     }
 }
 
@@ -206,6 +208,12 @@ section {
     opacity: 0.6; /* Lower opacity for overlay effect */
 }
 
+.h1_title_we{
+    color: #ffca0a;
+    font-weight: 600;
+    font-size: 60px;
+}
+
 /* Responsive styling for screens smaller than 768px */
 @media (max-width: 768px) {
     .contact-info {
@@ -247,6 +255,10 @@ section {
         position: relative; /* Reset for smaller screens */
         z-index: 0; /* Ensure it's below other elements */
     }
+    .h1_title_we{
+        font-size: 40px;
+    }
+    
 }
 
 /* Very small screens (below 480px) */
@@ -464,6 +476,13 @@ section {
     
 }
 
+.treatment_h1_title{
+    color: #ffca0a;
+    font-weight: 600;
+    font-size: 60px;
+    padding-bottom: 60px;
+}
+
 .treatment-item {
     width: calc(50% - 20px); /* Use calc to account for spacing between items */
     cursor: pointer;
@@ -512,6 +531,8 @@ section {
 .treatment-item:hover {
     border-top-right-radius: 10px; /* Keep rounded corners on hover */
     border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px; /* Keep rounded corners on hover */
+    border-bottom-right-radius: 10px;
     background-color: #ffca0a;
     color: #fff;
 }
@@ -562,7 +583,33 @@ section {
     width: 100%;
 }
 
+@media (max-width: 768px) {
+    .treatment-item {
+        width: 100%; /* Full width for mobile screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
 
+    .treatment-item img {
+        width: 80px; /* Smaller images on mobile */
+        height: 80px;
+    }
+
+    .treatment-item p {
+        font-size: 28px; /* Smaller text size on mobile */
+    }
+
+    .treatment-item i {
+        font-size: 40px; /* Adjust icon size */
+    }
+
+    .number {
+        font-size: 24px; /* Adjust number size */
+    }
+    .treatment_h1_title{
+        font-size: 45px;
+    }
+    
+}
 
 
 /* accodition */
@@ -904,6 +951,21 @@ footer p {
     background-color: transparent !important;
     color: #e0b109 !important; /* Change text/icon color on hover */
 }
+
+.payment_h1_title{
+    color: #ffca0a;
+    font-weight: 600;
+    font-size: 50px;
+    padding-bottom: 40px;
+}
+
+@media (max-width:768px){
+    .payment_h1_title{
+        font-size: 40px;
+    }
+    
+}
+
 @media (max-width:480px){
     .owl-carousel .owl-nav i{
         font-size: 40px;
@@ -999,5 +1061,17 @@ footer p {
     .why_us_border{
         border-right: none;
     }
-    
+    .navbar-logo {
+        height: 100px; /* Adjust this value to fit your desired logo height */
+        width: auto;  /* This will maintain the aspect ratio of the image */
+        max-width: 100px; /* Optional: set a maximum width if needed */
+    }
+    .navbar-collapse{
+        background-color: white;
+        text-align: center;
+    }
+    .location_navBTN{
+        margin-right: 50px;
+    }
+
 }
