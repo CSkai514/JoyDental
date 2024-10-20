@@ -19,52 +19,52 @@
 <body>
 
     <!-- Header Wrapper -->
-    <div class="header_wrapper">  <!-- Added wrapper for the navbar -->
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <!-- <a class="navbar-brand" href="#" style="color:#ffca0a; padding-right: 60px;">Joy Dental</a> -->   
-                 <a  class="navbar-brand" href="#" style="padding-right: 15px;">
-                <img src="assets/image/joydental_image_logo.png" alt="Joy Dental Logo" class="navbar-logo">                
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="aboutUs.html">About</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Treatment
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Braces</a></li>
-                            <li><a class="dropdown-item" href="#">Teeth Whitening</a></li>
-                            <li><a class="dropdown-item" href="#">Scaling & Polishing</a></li>
-                            <li><a class="dropdown-item" href="#">Cosmetic Dentistry</a></li>
-                            <li><a class="dropdown-item" href="#">Dental Veneers</a></li>
-                            <li><a class="dropdown-item" href="#">Fillings</a></li>
-                            <li><a class="dropdown-item" href="#">Root Canal Treatment</a></li>
-                            <li><a class="dropdown-item" href="#">Crown & Bridge</a></li>
-                            <li><a class="dropdown-item" href="#">Dental Implant</a></li>
-                            <li><a class="dropdown-item" href="#">Wisdom Teeth Removal</a></li>
-                            <li><a class="dropdown-item" href="#">Denture</a></li>
-                            <li><a class="dropdown-item" href="#">Teeth Extraction</a></li>
-                        </ul>
-                    </li>                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Location</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
+    <div class="header_wrapper"> 
+        <!-- Added wrapper for the navbar -->
+           <!-- Navbar -->
+           <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <div class="container-fluid">
+                    <a  class="navbar-brand" href="index.html" style="padding-right: 15px;">
+                   <img src="assets/image/joydental_image_logo.png" alt="Joy Dental Logo" class="navbar-logo">                
+                   </a>
+                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                       <span class="navbar-toggler-icon"></span>
+                   </button>
+                   <div class="collapse navbar-collapse" id="navbarNav">
+                       <ul class="navbar-nav">
+                           <li class="nav-item">
+                               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                           </li>
+                           <li class="nav-item">
+                             <a class="nav-link" href="aboutUs.html">About</a>
+                         </li>
+                         <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               Treatment
+                           </a>
+                           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                               <li><a class="dropdown-item coming-soon-btn" href="#">Braces</a></li>
+                               <li><a class="dropdown-item coming-soon-btn" href="#">Teeth Whitening</a></li>
+                               <li><a class="dropdown-item coming-soon-btn" href="#">Scaling & Polishing</a></li>
+                               <li><a class="dropdown-item coming-soon-btn" href="#">Cosmetic Dentistry</a></li>
+                               <li><a class="dropdown-item coming-soon-btn" href="#">Dental Veneers</a></li>
+                               <li><a class="dropdown-item coming-soon-btn" href="#">Fillings</a></li>
+                               <li><a class="dropdown-item coming-soon-btn" href="#">Root Canal Treatment</a></li>
+                               <li><a class="dropdown-item coming-soon-btn" href="#">Crown & Bridge</a></li>
+                               <li><a class="dropdown-item coming-soon-btn" href="#">Dental Implant</a></li>
+                               <li><a class="dropdown-item coming-soon-btn" href="#">Wisdom Teeth Removal</a></li>
+                               <li><a class="dropdown-item coming-soon-btn" href="#">Denture</a></li>
+                               <li><a class="dropdown-item coming-soon-btn" href="#">Teeth Extraction</a></li>
+                           </ul>
+                       </li>                        
+                           <li class="nav-item">
+                               <a class="nav-link coming-soon-btn" href="#">Location</a>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+           </nav>
+       </div>
 
     <!-- Hero Section -->
     <div class="container-fluid hero-section">
@@ -123,7 +123,7 @@
         <div class="card-content">
             <h1>Find Our Nearest clinic</h1>
             <p>Visit our website to find the Clinic closest to you. Click here for more information!</p>
-            <a href="#" class="explore-btn">Explore Location →</a>
+            <a href="#" class="explore-btn coming-soon-btn">Explore Location →</a>
         </div>
     </section>
 
@@ -135,6 +135,8 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
     <script>
       // Prevent dropdown from closing on click
@@ -149,6 +151,19 @@
         duration: 1000, // Animation duration in milliseconds
         once: true, // Whether animation should happen only once - while scrolling down
     });
+</script>
+<script>
+    document.querySelectorAll('.coming-soon-btn').forEach(function(button) {
+    button.addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent any default action (if a link)
+        Swal.fire({
+            title: 'Coming Soon!',
+            text: 'This feature is not yet available.',
+            icon: 'info',
+            confirmButtonText: 'OK'
+        });
+    });
+});
 </script>
 </body>
 </html>
