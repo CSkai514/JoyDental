@@ -188,12 +188,16 @@ section {
 }
 
 .info-text strong {
-    font-size: 18px; /* Slightly larger for emphasis */
+    font-size: 24px; /* Slightly larger for emphasis */
+}
+
+.another_span_info_text{
+    font-size: 20px;
 }
 
 .info-subtext {
-    font-size: 14px; /* Subtext size */
-    color: #4a4a4a; /* Subtext color */
+    font-size: 18px; /* Subtext size */
+    color: #222222; /* Subtext color */
 }
 
 /* Divider Between Items */
@@ -241,15 +245,19 @@ section {
     }
 
     .info-text {
-        font-size: 14px; /* Smaller text size */
+        font-size: 20px; /* Smaller text size */
     }
 
     .info-text strong {
-        font-size: 16px; /* Adjusted strong text size */
+        font-size: 20px; /* Slightly larger for emphasis */
+    }
+    
+    .another_span_info_text{
+        font-size: 18px;
     }
 
     .info-subtext {
-        font-size: 12px; /* Smaller subtext size */
+        font-size: 16px; /* Smaller subtext size */
     }
 
     .image-container {
@@ -1017,11 +1025,15 @@ footer p {
     }
 
     .info-text strong {
-        font-size: 14px;
+        font-size: 18px; /* Slightly larger for emphasis */
+    }
+    
+    .another_span_info_text{
+        font-size: 16px;
     }
 
     .info-subtext {
-        font-size: 10px; /* Adjust subtext for smaller screens */
+        font-size: 14px; /* Smaller subtext size */
     }
 
     .post_slide {
