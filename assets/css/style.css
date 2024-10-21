@@ -202,7 +202,7 @@ section {
 
 /* Divider Between Items */
 .info-divider {
-    height: 120px; /* Adjust height */
+    height: 150px; /* Adjust height */
     width: 2px; /* Width for the divider */
     background-color: #ccc; /* Divider color */
     margin: 0 10px; /* Space around the divider */
