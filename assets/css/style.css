@@ -9,7 +9,7 @@ html{
 }
 
 .section_title_sub{
-    color: #002d72;
+    color: #404040 ;
     font-weight: 700;
     font-size: 25px;
 }
@@ -43,11 +43,11 @@ section {
     font-size: 18px;
 }
 .navbar :hover{
-    color:#ffca0a;
+    color:#ffc900;
 }
 
 .navbar a.active {
-    color: #ffca0a !important;
+    color: #ffc900 !important;
     font-weight: 600;
 }
 
@@ -63,6 +63,29 @@ section {
     height: 130px; /* Adjust this value to fit your desired logo height */
     width: auto;  /* This will maintain the aspect ratio of the image */
     max-width: 130px; /* Optional: set a maximum width if needed */
+}
+.offcanvas {
+    width: 70% !important; /* Adjust width to cover half the screen */
+}
+
+.offcanvas-backdrop {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.nav-link {
+    display: flex; /* Use flexbox for the link */
+    justify-content: space-between; /* Space between text and icon */
+    align-items: center; /* Align items vertically center */
+    padding-right: 10px; /* Optional: adjust the padding to reduce space */
+}
+
+.expand-icon {
+    margin-left: 10px; /* Space between text and icon */
+    transition: transform 0.2s; /* Animation duration */
+}
+
+.collapse.show + .expand-icon {
+    transform: rotate(45deg); /* Rotate the icon when expanded */
 }
 .hero-section {
     height: 700px;
@@ -91,30 +114,58 @@ section {
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Stack elements vertically */
     align-items: flex-start; /* Align items to the left */
+    z-index: 10;
 }
 
 /* Landing Heading Styles */
 .landing-heading {
     font-size: 100px;
-    color: #002d72; /* Navy blue */
+    color: #404040 ; /* Navy blue */
     font-weight: 700;
     position: relative; /* Set position to relative to allow absolute positioning of the image */
     display: inline-block; /* Make the h1 an inline-block to contain the image properly */
     margin-top: 180px;
+    line-height: 0.95 !important;
+    z-index: 10;
 }
 
 .landing-subheading {
-    font-size: 24px; /* Increased font size */
-    color: #4a4a4a; /* Subheading color */
-    margin-bottom: 20px; /* Margin below subheading */
+    font-size: 24px;
+    color: #4a4a4a;
+    margin-bottom: 20px; 
+    padding-top: 10px;
+    z-index: 10;
 }
 .smile-logo {
-    width: 250px; /* Set the desired width */
-    height: 250px; /* Set the desired height */
+    width: 150px; /* Set the desired width */
+    height: 150px; /* Set the desired height */
     position: absolute; /* Make the image absolute inside the h1 */
-    top: 80px; /* Adjust positioning to place it next to or above the text */
-    right: -70px; /* Position it outside the h1 text content */
+    top: 85px;
+    right: -10px;
 }
+
+.image-container {
+    position: absolute;
+    right: 0;
+    z-index: 1 !important;
+    transform: translate(-55%, 5%); /* Adjust position as needed */
+}
+
+.right-image {
+    width: 400px; /* Set desired width for the image */
+    max-width: 100%;
+}
+
+.header-gradient {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%; /* Cover the entire height of the container */
+    background: linear-gradient(180deg, rgba(240, 248, 255, 0.15) 20%, rgba(240, 248, 255, 0.92) 80%);
+    z-index: 8; /* Make sure it covers both the image and contact-info but is behind the text */
+}
+
 @media (max-width: 768px) {
     .landing-heading {
         font-size: 60px; /* Decrease font size on smaller screens */
@@ -133,11 +184,26 @@ section {
     .separator{
         display: none;
     }
+
+    .image-container {
+        position: absolute;
+        right: 0;
+        z-index: 1 !important;
+        transform: translate(-0%, -2%); /* Adjust position as needed */
+    }
+
+    .header-gradient {
+       
+    }
 }
 
-/* For very small screens like mobile phones */
 @media (max-width: 480px) {
-
+    .contact-info{
+        margin-top: 20px !important;
+    }
+    .navbar-nav .nav-item {
+        margin-right: 0px; 
+    }
 }
 
 /* Contact Info Section */
@@ -159,6 +225,7 @@ section {
     flex: 1 1 30%; /* Flexible width, default 30%, allow shrinking */
     padding: 20px; /* Padding around the item */
     box-sizing: border-box; /* Include padding in the width calculation */
+    z-index: 10 ;
 }
 
 .special_iconCSS{
@@ -184,7 +251,8 @@ section {
 .info-text {
     padding-left: 40px;
     font-size: 16px; /* Main text size */
-    color: #002d72; /* Navy blue text */
+    color: #404040 ; /* Navy blue text */
+    z-index: 10;
 }
 
 .info-text strong {
@@ -196,27 +264,25 @@ section {
 }
 
 .info-subtext {
+    position: relative;
     font-size: 18px; /* Subtext size */
-    color: #222222; /* Subtext color */
+    color: #6c6c6c; /* Subtext color */
+    z-index: 10;
 }
 
 /* Divider Between Items */
 .info-divider {
     height: 150px; /* Adjust height */
     width: 2px; /* Width for the divider */
-    background-color: #ccc; /* Divider color */
+    background-color: #858585; /* Divider color */
     margin: 0 10px; /* Space around the divider */
+    z-index: 10;
 }
 
-/* Right Image */
-.right-image {
-    max-width: 150%; /* Scale image */
-    height: auto; /* Keep aspect ratio */
-    opacity: 0.6; /* Lower opacity for overlay effect */
-}
+
 
 .h1_title_we{
-    color: #ffca0a;
+    color: #ffc900;
     font-weight: 600;
     font-size: 60px;
 }
@@ -229,12 +295,21 @@ section {
     }
 
     .info-divider {
-        display: none; /* Hide the divider on smaller screens */
+        height: 2px;
+        width: 350px;
+        background-color: #858585;
+        margin: 0 0px;
+        z-index: 10;
+        margin-bottom: 10px;
+    }
+
+    .divider-1{
+        margin-top: -10px;
     }
 
     .info-item {
         width: 100%; /* Full width for smaller screens */
-        margin-bottom: 20px; /* Margin below each item */
+        margin-bottom: 10px; /* Margin below each item */
     }
 
     .info-item img, 
@@ -301,7 +376,7 @@ section {
 .card-title {
     font-size: 20px;
     font-weight: bold;
-    color: #002d72; /* Navy blue for titles */
+    color: #404040 ; /* Navy blue for titles */
     margin-bottom: 15px;
 }
 
@@ -409,7 +484,7 @@ section {
 
 .insta-button {
     display: inline-block;
-    background-color: #ffca0a; /* Blue color */
+    background-color: #ffc900; /* Blue color */
     color: white;
     font-size: 20px;
     padding: 30px 30px;
@@ -461,7 +536,7 @@ section {
 .number {
     font-weight: bold;
     margin-right: 10px; /* Adjust spacing between number and image */
-    color: #ffca0a;
+    color: #ffc900;
     font-size: 30px;
     padding-right: 20px;
 
@@ -488,7 +563,7 @@ section {
 }
 
 .treatment_h1_title{
-    color: #ffca0a;
+    color: #ffc900;
     font-weight: 600;
     font-size: 60px;
     padding-bottom: 60px;
@@ -544,7 +619,7 @@ section {
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px; /* Keep rounded corners on hover */
     border-bottom-right-radius: 10px;
-    background-color: #ffca0a;
+    background-color: #ffc900;
     color: #fff;
 }
 
@@ -566,7 +641,7 @@ section {
 .treatment-item p {
     font-size: 38px;
     text-align: left; /* Align text to the left */
-    color: #002d72; /* Set text color to black */
+    color: #404040 ; /* Set text color to black */
     flex: 1; /* Allow the text to grow and fill available space */
 }
 
@@ -589,7 +664,7 @@ section {
 }
 
 .separator {
-    border-bottom: 2px solid #ffca0a; /* Add a bottom border for separation */
+    border-bottom: 2px solid #ffc900; /* Add a bottom border for separation */
     margin: 20px 0;
     width: 100%;
 }
@@ -640,7 +715,7 @@ section {
 }
 
 .accordion-header:hover {
-    background-color: #ffca0a; /* Change color on hover */
+    background-color: #ffc900; /* Change color on hover */
 }
 
 .icon {
@@ -673,7 +748,7 @@ section {
 }
 
 .hero-subtitle {
-    color: #002d72;
+    color: #404040 ;
     font-weight: 700;
     font-size: 25px;
     margin-top: 20px; /* Space between title and subtitle */
@@ -711,7 +786,7 @@ section {
     font-size: 38px;
     font-weight: 600;
     margin-top: 10px;
-    color: #ffca0a;
+    color: #ffc900;
     word-spacing: 30px;
     
 }
@@ -826,7 +901,7 @@ footer p {
     border-radius: 10px;
     position: relative; /* For stacking with SVG */
     z-index: 1; /* Bring content on top of SVG */
-    color: #002d72;
+    color: #404040 ;
 }
 
 .card-content h1 {
@@ -834,7 +909,7 @@ footer p {
     margin-bottom: 10px;
     position: relative;
     display: inline-block;
-    color: #ffca0a;
+    color: #ffc900;
     font-weight: 600;
 }
 
@@ -851,7 +926,7 @@ footer p {
 .explore-btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ffca0a;
+    background-color: #ffc900;
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -865,20 +940,26 @@ footer p {
     background-color: #0056b3;
 }
 
-
 .whatsapp-float {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    background-color: white;
+    bottom: 2.34vw;
+    right: 1.61vw;
+    width: 95px;
+    height: 95px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
     text-decoration: none;
+    overflow: hidden; /* Ensures any overflow is cut off */
+    z-index: 500;
+}
+
+.whatsapp-float img {
+    width: 100%; /* Ensures the image fills the circle */
+    height: 150%;
+    object-fit: cover; /* Ensures it covers the circle without distortion */
 }
 
 .whatsapp-float i {
@@ -938,7 +1019,7 @@ footer p {
     width: 50px; /* Set a custom width */
     height: 50px; /* Set a custom height */
     border-radius: 50%; /* Make the button circular (optional) */
-    color: #ffca0a !important; /* Custom text/icon color */
+    color: #ffc900 !important; /* Custom text/icon color */
     border: none; /* Remove border */
     transition: all 0.5s ease-in-out; /* Smooth transition for hover effects */
 }
@@ -964,7 +1045,7 @@ footer p {
 }
 
 .payment_h1_title{
-    color: #ffca0a;
+    color: #ffc900;
     font-weight: 600;
     font-size: 50px;
     padding-bottom: 40px;
@@ -978,6 +1059,12 @@ footer p {
 }
 
 @media (max-width:480px){
+    .whatsapp-float{
+        width: 65px;
+        height: 65px;
+        bottom: 5vw;
+        right: 5vw;
+    }
     .owl-carousel .owl-nav i{
         font-size: 40px;
     }
@@ -1002,7 +1089,7 @@ footer p {
     .smile-logo {
         width: 100px; /* Make the logo smaller */
         height: 100px;
-        top: 40px; /* Position closer to the text */
+        top: 23px;
         right: -20px; /* Adjust position accordingly */
     }
     .info-item img {

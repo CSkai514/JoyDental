@@ -21,30 +21,73 @@
 <body>
     <div class="content-wrapper">
     <!-- Header Wrapper -->
-    <div class="header_wrapper"> 
-     <!-- Added wrapper for the navbar -->
+    <div class="header_wrapper">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                 <a  class="navbar-brand" href="index.html" style="padding-right: 15px;">
-                <img src="assets/image/joydental_image_logo.png" alt="Joy Dental Logo" class="navbar-logo">                
+                <a class="navbar-brand" href="index.html" style="padding-right: 15px;">
+                    <img src="assets/image/joydental_image_logo.png" alt="Joy Dental Logo" class="navbar-logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="aboutUs.html">About</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Treatment
+                            <a class="nav-link" href="aboutUs.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Treatment
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item coming-soon-btn" href="#">Braces</a></li>
+                                <li><a class="dropdown-item coming-soon-btn" href="#">Teeth Whitening</a></li>
+                                <li><a class="dropdown-item coming-soon-btn" href="#">Scaling & Polishing</a></li>
+                                <li><a class="dropdown-item coming-soon-btn" href="#">Cosmetic Dentistry</a></li>
+                                <li><a class="dropdown-item coming-soon-btn" href="#">Dental Veneers</a></li>
+                                <li><a class="dropdown-item coming-soon-btn" href="#">Fillings</a></li>
+                                <li><a class="dropdown-item coming-soon-btn" href="#">Root Canal Treatment</a></li>
+                                <li><a class="dropdown-item coming-soon-btn" href="#">Crown & Bridge</a></li>
+                                <li><a class="dropdown-item coming-soon-btn" href="#">Dental Implant</a></li>
+                                <li><a class="dropdown-item coming-soon-btn" href="#">Wisdom Teeth Removal</a></li>
+                                <li><a class="dropdown-item coming-soon-btn" href="#">Denture</a></li>
+                                <li><a class="dropdown-item coming-soon-btn" href="#">Teeth Extraction</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link coming-soon-btn location_navBTN" href="#">Location</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- Offcanvas for mobile navigation -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutUs.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#treatmentCollapse" aria-expanded="false" aria-controls="treatmentCollapse">
+                            Treatment 
+                            <span class="expand-icon"><i class="bi bi-plus"></i></span>
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    </li>
+                    <div class="collapse" id="treatmentCollapse">
+                        <ul class="list-unstyled">
                             <li><a class="dropdown-item coming-soon-btn" href="#">Braces</a></li>
                             <li><a class="dropdown-item coming-soon-btn" href="#">Teeth Whitening</a></li>
                             <li><a class="dropdown-item coming-soon-btn" href="#">Scaling & Polishing</a></li>
@@ -58,23 +101,28 @@
                             <li><a class="dropdown-item coming-soon-btn" href="#">Denture</a></li>
                             <li><a class="dropdown-item coming-soon-btn" href="#">Teeth Extraction</a></li>
                         </ul>
-                    </li>        
-                        <li class="nav-item">
-                            <a class="nav-link coming-soon-btn location_navBTN" href="#">Location</a>
-                        </li>
-                    </ul>
-                </div>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link coming-soon-btn location_navBTN" href="#">Location</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
     </div>
     <section class="landing-page-section">
         <div class="landing-content">
+           
             <h1 class="landing-heading">Healthy Smile,<br> Happy Life 
                 <img src="assets/image/joydental_image_logo_smileOnly.png" class="smile-logo" alt="Smile Logo">
             </h1>
             <p class="landing-subheading">Maintain your beautiful and healthy smile with us.</p> 
-    
+            <div class="image-container">
+                <img src="assets/image/women_smite_picture1.png" alt="Woman" class="right-image">
+                
+            </div>
+            <div class="header-gradient"></div>
             <div class="contact-info">
+                
                 <div class="info-item" data-aos="fade-right" data-aos-delay="300">
                      <img src="assets/image/telephone_724664.png"  alt="">
                     <div class="info-text info_img_phone_css">
@@ -84,7 +132,7 @@
                     </div>
                 </div>
     
-                <div class="info-divider"></div>
+                <div class="info-divider  divider-1"></div>
     
                 <div class="info-item" data-aos="fade-up" data-aos-delay="300">
                     <i class="fa-solid fa-clock special_iconCSS" style="color: #6f6f6f; margin-bottom: 20px;"></i>
@@ -95,10 +143,10 @@
                     </div>
                 </div>
     
-                <div class="info-divider"></div>
+                <div class="info-divider divider-1"></div>
     
-                <div class="info-item" data-aos="fade-left" data-aos-delay="300"> 
-                    <i class="fa-brands fa-square-whatsapp special_iconCSS" style="color:#25D366; margin-top: 5px;"></i>
+                <div class="info-item" data-aos="fade-left" data-aos-delay="300">
+                    <i class="fa-solid fa-calendar-days special_iconCSS" style="color:#ff9157; margin-top: 5px;"></i>
                     <div class="info-text">
                         <strong>Book an appointment</strong><br>
                         <span class="info-subtext">Just click on the WhatsApp to book an appointment with us.</span>
@@ -107,9 +155,7 @@
             </div>
     
             <!-- Image of the Woman -->
-            <div class="image-container">
-                <!-- <img src="assets/image/joydental_image_logo.png" alt="Logo" class="right-image" width="40%"> -->
-            </div>
+            
         </div>
     </section>
     
@@ -135,7 +181,7 @@
             <div class="logo-slider-section h-100" >
                 <div class="logo-slider-container h-100">
                     <div class="logo-slider-wrapper rounded">
-                        <h1 class="text-center" style="padding-bottom: 30px; color: #ffca0a;">Our panel</h1>
+                        <h1 class="text-center" style="padding-bottom: 30px; color: #ffc900;">Our panel</h1>
                         <div class="slider">
                             <div class="slide-track">
                                 <div class="slide">
@@ -331,7 +377,7 @@
                 <div class="post-slider-container h-100">
                     <div class="post-slider-wrapper rounded">
                         <p class="hero-subtitle text-center " data-aos="zoom-in" data-aos-delay="400">Our Community</p>
-                        <h1 class="text-center" style="color: #ffca0a;font-weight: 600; font-size: 50px;padding-bottom: 30px;" data-aos="flip-right" data-aos-delay="400">Join Our Community</h1>
+                        <h1 class="text-center" style="color: #ffc900;font-weight: 600; font-size: 50px;padding-bottom: 30px;" data-aos="flip-right" data-aos-delay="400">Join Our Community</h1>
                         <div class="button-container">
                             <a href="https://www.instagram.com/klinikpergigian.joydental/?hl=en" class="insta-button" target="_blank">
                                 @klinikpergigian.joydental
@@ -388,7 +434,7 @@
     
     <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/60107198150?text=I%20have%20question%20about%20clinic%20services%20fee" class="whatsapp-float" target="_blank">
-        <i class="fa-brands fa-square-whatsapp" style="color: #25D366;"></i>
+        <img src="assets/image/whatsapplogo.png" alt="WhatsApp Logo" />
     </a>
     
     <!-- Footer -->
@@ -469,6 +515,23 @@ document.querySelectorAll('.coming-soon-btn').forEach(function(button) {
             icon: 'info',
             confirmButtonText: 'OK'
         });
+    });
+});
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const treatmentLink = document.querySelector('a[data-bs-toggle="collapse"]');
+    const expandIcon = treatmentLink.querySelector('.expand-icon i');
+
+    treatmentLink.addEventListener('click', function () {
+        if (expandIcon.classList.contains('bi-plus')) {
+            expandIcon.classList.remove('bi-plus');
+            expandIcon.classList.add('bi-dash'); // Change to a dash icon
+        } else {
+            expandIcon.classList.remove('bi-dash');
+            expandIcon.classList.add('bi-plus'); // Change back to plus icon
+        }
     });
 });
 </script>
