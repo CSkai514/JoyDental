@@ -59,6 +59,35 @@ section {
     margin-right: 0;
 }
 
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Hide dropdown by default */
+.dropdown-menu {
+    display: none;
+}
+
+.navbar .dropdown-menu .dropdown-item{
+    border-bottom: 1px solid #dee2e6; 
+    padding: 10px;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-item:last-child {
+    border-bottom: none; /* Remove border from the last item */
+}
+
+/* Optional: Add some padding for list items */
+.navbar-nav .nav-link {
+    padding: 10px 15px; /* Adjust as necessary */
+}
+
+.navbar .dropdown-menu li:first-child .dropdown-item {
+    padding-top: 0; /* Targets the first <li> and its child <a> */
+}
+
 .navbar-logo {
     height: 130px; /* Adjust this value to fit your desired logo height */
     width: auto;  /* This will maintain the aspect ratio of the image */
@@ -71,12 +100,32 @@ section {
 .offcanvas-backdrop {
     background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
 }
+.btn-appointment {
+    padding: 15px 30px; /* Adjust padding for the button */
+    background-color: #ffc900; /* Customize background color */
+    color: white; /* Customize text color */
+    border: none; /* Remove border */
+    border-radius: 20px; /* Ensure it has rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    margin-left: auto;
+    margin-right: 100px;
+    font-size: 20px;
+    font-weight: 600;
+}
 
+.btn-appointment:hover {
+    background-color: #eebb03; /* Change background color on hover */
+    color: white;
+}
 .nav-link {
     display: flex; /* Use flexbox for the link */
     justify-content: space-between; /* Space between text and icon */
     align-items: center; /* Align items vertically center */
     padding-right: 10px; /* Optional: adjust the padding to reduce space */
+}
+
+.arrowRight_appoitmentBTN{
+    margin-left: 10px;
 }
 
 .expand-icon {
@@ -87,6 +136,28 @@ section {
 .collapse.show + .expand-icon {
     transform: rotate(45deg); /* Rotate the icon when expanded */
 }
+
+
+#treatmentCollapse .list-unstyled {
+    padding-left: 0; /* Reset default padding for the ul */
+    border-bottom: 1px solid #dee2e6; 
+}
+
+#treatmentCollapse .dropdown-item {
+    padding: 10px 15px; /* Add padding to each dropdown item */
+    margin-left: 10px;
+    border-bottom: 1px solid #dee2e6; 
+}
+.offcanvas-body .navbar-nav .nav-item{
+    border-bottom: 1px solid #d1d2d381; 
+}
+
+.bookBtn_mobile{
+    background-color: #ffc900;
+    color: white;
+}
+
+
 .hero-section {
     height: 700px;
     display: flex;
@@ -856,16 +927,58 @@ section {
     font-size: 18px;
   }
 
-.footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+  .footer {
+    background-color: #f8f9fa;
+    padding: 15px 0;
   }
-footer p {
-    margin: 0;
-    padding: 10px 0;
+  
+  .footer-logo {
+    width: 250px; 
+    margin-right: 700px;
+  }
+  
+  .footer-location-link, .footer-contact {
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    margin-left: 50px;
+  }
+
+.footer-social-link{
+    font-size: 60px;
+    margin:20px;
+    color: #333;
+    text-decoration: none;
 }
+
+  
+  .footer-location-link:hover, .footer-social-link:hover {
+    color: #0056b3; /* Hover color */
+  }
+  
+  
+  .footer-contact + .footer-contact {
+    margin-left: 10px;
+  }
+
+  .right-footer-section{
+    padding-left: 400px;
+}
+@media (max-width:480px){
+    .right-footer-section{
+        padding-left: 0;
+    }
+  .footer-logo {
+    width: 150px; 
+    margin-right: 0;
+  }
+  .footer-location-link, .footer-contact {
+    font-size: 18px;
+    margin-left: 20px;
+  }
+}
+
+/* do the mobile version next */
 
 .find_us-card {
     position: relative;
