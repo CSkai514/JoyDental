@@ -16,7 +16,7 @@ html{
 
 /* Header Wrapper Styles */
 .header_wrapper {
-    background-color: #f0f8ff;
+    background-color: #e5f7ff;
     width: 100%;
     top: 0;
     padding-top: 50px;
@@ -250,7 +250,9 @@ section {
         right: -40px; /* Move the logo closer */
     }
     .hero-title{
-            font-size: 3rem !important;
+            font-size: 3.5rem !important;
+            padding: 10px;
+            line-height: 1.1 !important;
     }
 
 
@@ -822,10 +824,12 @@ section {
 }
 
 .hero-title {
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 700; /* Make the font bold */
-    color: #002147; /* Dark color for text */
+    color: #404040; /* Dark color for text */
     margin: 0; /* Remove default margin */
+
+    line-height: 0.95;
 }
 
 .hero-subtitle {
@@ -849,10 +853,11 @@ section {
 }
 
 .section_why_choose_us .feature-image {
-    width: 80px; /* Ensure the image has a visible size */
+    width: 100px; /* Ensure the image has a visible size */
     height: auto;
     display: block;
-    margin: 0 auto; /* Center the image */
+    margin-top: 20px;
+    /* margin: 0 auto;     Center the image */
 }
 .section_why_choose_us .feature-number {
     font-size: 25px;
@@ -864,12 +869,54 @@ section {
 }
 
 .section_why_choose_us .feature-title {
-    font-size: 38px;
+    font-size: 41px;
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: -15px;
     color: #ffc900;
     word-spacing: 30px;
     
+}
+
+.why_us_sectionTitle{
+    color: #ffca0a;
+    font-weight: 600;
+    font-size:45px;
+    padding-bottom: 50px
+}
+
+.section_why_choose_us .container{
+    max-width: 1820px;
+}
+
+@media (max-width:480px){
+    .thebox_whyus{
+        padding-left: 15px !important;
+    }
+    .why_us_sectionTitle{
+        font-size:40px !important;
+        padding-bottom: 0px !important;
+    }
+    .section_why_choose_us .feature-image {
+
+        margin-top: 40px;
+    }
+    .section_why_choose_us .feature-number{
+        font-size: 18px;
+    }
+    .section_why_choose_us .feature-title{
+        font-size: 25px;
+    }
+    .section_why_choose_us .feature-description{
+        font-size: 16px !important;
+    }
+    .hero-subtitle {
+        font-size: 18px;
+    }
+}
+
+
+.thebox_whyus{
+    padding-left: 50px;
 }
 
 .why_us_border{
@@ -941,6 +988,12 @@ section {
     background-color: #f8f9fa;
     padding: 15px 0;
   }
+
+  .footer-link{
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+  }
   
   .footer-logo {
     width: 250px; 
@@ -954,10 +1007,18 @@ section {
   }
 
 .footer-social-link{
-    font-size: 60px;
-    margin:20px;
+    font-size: 28px;
     color: #333;
     text-decoration: none;
+}
+
+.footer-social-link i{
+    border-radius: 50%;
+    border: 1px solid #333;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+
 }
 
   
@@ -998,7 +1059,7 @@ section {
 .find_us-card {
     position: relative;
     width: 90%;
-    max-width: 1200px;
+    max-width: 1700px;
     margin: 50px auto;
     border-radius: 15px;
     overflow: hidden;
