@@ -1046,6 +1046,35 @@ section {
     font-size: 18px;
     margin-left: 20px;
   }
+  .card-location {
+    width: 375px !important;
+    height: 500px !important;
+    margin-left: 15px !important;
+}
+
+.card-location-image {
+    height: 250px !important;
+
+}
+
+.waze-icon {
+    bottom: 15px;
+    right: 22px;
+    width: 50px !important; /* Size of the Waze icon */
+    height: 50px !important; 
+}
+
+.waze-icon i {
+    color: white;
+    font-size: 25px !important;
+}
+.card-location-content h3 {
+    font-size: 25px !important;
+}
+
+.card-location-content p {
+    font-size: 16px !important;
+}
 }
 @media(max-width: 768px){
     .footer-location-link, .footer-contact {
@@ -1054,7 +1083,97 @@ section {
       }
 }
 
-/* do the mobile version next */
+.location_mainsection{
+    background-color: #f0f8ff;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.card_location_section .container{
+    max-width: 1800px !important;
+}
+
+.card-location {
+    width: 555px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    height: 600px;
+}
+
+.card-location:hover {
+    transform: translateY(-5px);
+}
+
+.card-location-image {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Adjust based on desired height */
+    overflow: hidden;
+}
+
+.card-location-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.waze-icon {
+    position: absolute;
+    bottom: 15px;
+    right: 22px;
+    width: 75px; /* Size of the Waze icon */
+    height: 75px;
+    background-color: #299dcb; /* Waze icon background color */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    transition: transform 0.3s;
+}
+
+.waze-icon i {
+    color: white;
+    font-size: 38px;
+}
+
+.waze-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.waze-icon:hover {
+    transform: scale(1.1);
+}
+
+.card-location-content {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.card-location-content h3 {
+    font-size: 45px;
+    color: #404040; /* Adjust color to match design */
+    margin: 0;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.card-location-content p {
+    font-size: 19px;
+    color: #6c6c6c;
+    margin-top: -18px;
+    padding: 20px;
+}
 
 .find_us-card {
     position: relative;
