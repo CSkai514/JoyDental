@@ -1092,17 +1092,22 @@ section {
     margin-top: 50px;
 }
 
-.card_location_section .container{
-    max-width: 1800px !important;
+@media screen and (min-width: 1735px) {
+    .card_location_section .container{
+        max-width: 1800px !important;
+    }
 }
 
+
 .card-location {
-    width: 555px;
+    width: 100%; /* Allow it to be responsive within col-lg-4 */
+    max-width: 555px;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-    height: 600px;
+    height: 100%;
+    /* max-height: 600px; */
 }
 
 .card-location:hover {
