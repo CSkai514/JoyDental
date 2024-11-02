@@ -16,7 +16,7 @@ html{
 
 /* Header Wrapper Styles */
 .header_wrapper {
-    background-color: #e5f7ff;
+    background-color: #f0f8ff;
     width: 100%;
     top: 0;
     padding-top: 50px;
@@ -1133,13 +1133,22 @@ section {
       }
 }
 
+.location_show_cardSection{
+    padding: 0;
+}
+
+.location_content_section{  
+    padding: 0 !important;
+    margin: 100px auto; /* Center the content */
+}
+
 .location_mainsection{
     background-color: #f0f8ff;
     height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 @media screen and (min-width: 1735px) {
