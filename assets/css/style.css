@@ -179,7 +179,7 @@ section {
 
 .landing-content {
     position: relative; /* Make the content relative for absolute positioning */
-    max-width: 1700px; /* Set a max-width */
+    max-width: 1250px; /* Set a max-width */
     margin: 0 auto; /* Center the content */
     padding: 0; /* No side padding */
     display: flex; /* Use flexbox for layout */
@@ -302,6 +302,7 @@ section {
 .special_iconCSS{
     font-size: 95px;
     padding-right: 80px;
+    
 }
 
 .info-item img{
@@ -358,6 +359,50 @@ section {
     font-weight: 600;
     font-size: 60px;
 }
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+    .contact-info{
+        gap: 10px;
+    }
+    .info-item {
+        width: 90%;
+        margin-bottom: 0px;
+        margin-right: -1px;
+    }
+
+    .info-item i {
+        width: 40px !important;
+        height: 40px !important;
+        margin-right: 15px; 
+        
+    }
+
+    .info-item img{
+        width: 70px !important;
+        height: 70px !important; 
+        margin-left: 0px;
+    }
+
+    .info-text {
+        font-size: 20px; /* Smaller text size */
+        padding-left: 0px;
+    }
+
+    .info-text strong {
+        font-size: 22px; /* Slightly larger for emphasis */
+    }
+    
+    .another_span_info_text{
+        font-size: 18px;
+    }
+
+    .info-subtext {
+        font-size: 16px; /* Smaller subtext size */
+    }
+    .special_iconCSS{
+        margin-bottom: 60px !important;
+        font-size: 70px !important;
+    }
+}
 
 /* Responsive styling for screens smaller than 768px */
 @media (max-width: 768px) {
@@ -368,7 +413,7 @@ section {
 
     .info-divider {
         height: 2px;
-        width: 350px;
+        width: 100%;
         background-color: #858585;
         margin: 0 0px;
         z-index: 10;
@@ -384,27 +429,33 @@ section {
         margin-bottom: 10px; /* Margin below each item */
     }
 
-    .info-item img, 
     .info-item i {
         width: 50px; /* Adjust icon size */
         height: 50px; /* Adjust icon size */
         margin-right: 15px; /* Adjust margin for smaller screens */
     }
 
+    .info-item img{
+        width: 90px; /* Adjust icon size */
+        height: 90px; /* Adjust icon size */
+        margin-right: 1px; /* Adjust margin for smaller screens */
+        margin-left: 0px;
+    }
+
     .info-text {
-        font-size: 20px; /* Smaller text size */
+        font-size: 25px; /* Smaller text size */
     }
 
     .info-text strong {
-        font-size: 20px; /* Slightly larger for emphasis */
+        font-size: 27px; /* Slightly larger for emphasis */
     }
     
     .another_span_info_text{
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .info-subtext {
-        font-size: 16px; /* Smaller subtext size */
+        font-size: 18px; /* Smaller subtext size */
     }
 
     .image-container {
@@ -421,7 +472,9 @@ section {
 
 /* Very small screens (below 480px) */
 @media (max-width: 480px) {
-
+    .info-divider {
+        width: 100%;
+    }
 }
 
 
@@ -634,7 +687,6 @@ section {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-    max-width: 1800px;
 }
 
 .treatment_h1_title{
@@ -1105,6 +1157,12 @@ section {
     
     .card-location-content p {
         font-size: 19px !important;
+    }
+    .item_container_div {
+        max-width: 1800px !important;
+    }
+    .landing-content{
+        max-width: 1700px;
     }
 }
 
