@@ -1462,6 +1462,18 @@ section {
     width: fit-content;
     max-width: 400px;
 }
+.denture_image-container_teethwhiting{
+    position: absolute;
+    right: 0;
+    z-index: 1 !important;
+    background-color: #3385d6;
+    border-radius: 20px;
+    padding: 1rem;
+    margin-top: 150px;
+    transform: rotate(5.5deg);
+    width: fit-content;
+    max-width: 400px;
+}
 
 .denture-right-image {
     width: 400px; /* Set desired width for the image */
@@ -1831,6 +1843,10 @@ section {
         left: 0;
         margin-top: 450px;
     }
+    .denture_image-container_teethwhiting{
+        left: 0;
+        margin-top: 450px;
+    }
     .denture-page-section{
         height: 1100px;
     }
@@ -1906,6 +1922,10 @@ section {
     .denture_image-container{
         margin-top: 400px;
         left: 5px;
+    }
+    .denture_image-container_teethwhiting{
+        left: 0;
+        margin-top: 420px;
     }
     .denture-heading {
         font-size: 55px;
