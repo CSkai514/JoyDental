@@ -191,7 +191,7 @@ section {
 /* Landing Heading Styles */
 .landing-heading {
     font-size: 100px;
-    color: #404040 ; /* Navy blue */
+    color: #404040 ;
     font-weight: 700;
     position: relative; /* Set position to relative to allow absolute positioning of the image */
     display: inline-block; /* Make the h1 an inline-block to contain the image properly */
@@ -832,39 +832,6 @@ section {
     
 }
 
-
-/* accodition */
-.accordion-item {
-    margin-bottom: 10px; /* Space between sections */
-}
-
-.accordion-header {
-    display: flex; /* Use flexbox to align items */
-    align-items: center; /* Center items vertically */
-    padding: 15px;
-    cursor: pointer;
-    position: relative; /* Position for the pseudo-element */
-    background-color: transparent; /* Default background color */
-    transition: background-color 0.3s ease; /* Smooth background color transition */
-    border-bottom: 1px solid #ccc; /* Add bottom border only */
-}
-
-.accordion-header:hover {
-    background-color: #ffc900; /* Change color on hover */
-}
-
-.icon {
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for icon */
-    margin-left: auto; /* Push icon to the right */
-}
-
-.accordion-header:hover .icon {
-    opacity: 1; /* Show icon on hover */
-    transform: translateX(5px); /* Slide icon to the right slightly */
-}
-/* end */
-
 .hero-section {
     background-color: #e5f7ff; /* Light background color */
     padding: 50px 0; /* Vertical padding */
@@ -1443,6 +1410,553 @@ section {
     font-weight: 600;
     font-size: 50px;
     padding-bottom: 40px;
+}
+
+
+.denture-page-section {
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 60px 20px; /* Top/bottom padding, left/right padding */
+    position: relative; /* Make this section relative */
+    height: 800px;
+}
+
+.denture-content {
+    position: relative; /* Make the content relative for absolute positioning */
+    max-width: 1250px; /* Set a max-width */
+    margin: 0 auto; /* Center the content */
+    padding: 0; /* No side padding */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the left */
+    z-index: 10;
+}
+
+/* Landing Heading Styles */
+.denture-heading {
+    font-size: 100px;
+    color: #404040 ; /* Navy blue */
+    font-weight: 700;
+    position: relative; /* Set position to relative to allow absolute positioning of the image */
+    display: inline-block; /* Make the h1 an inline-block to contain the image properly */
+    line-height: 0.95 !important;
+    z-index: 10;
+}
+
+.denture-subheading {
+    font-size: 24px;
+    color: #4a4a4a;
+    margin-bottom: 20px; 
+    padding-top: 10px;
+    z-index: 10;
+}
+
+.denture_image-container {
+    position: absolute;
+    right: 0;
+    z-index: 1 !important;
+    background-color: #3385d6;
+    border-radius: 20px;
+    padding: 1rem;
+    margin-top: 150px;
+    transform: rotate(5.5deg);
+    width: fit-content;
+    max-width: 400px;
+}
+
+.denture-right-image {
+    width: 400px; /* Set desired width for the image */
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+
+/* Image label styling */
+.image-label {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0465c6;
+    color: white;
+    padding: 0.25rem 1rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.breadcrumb_denture{
+    font-size: 20px;
+    color: #404040 ;
+    margin-top: 180px;
+    z-index: 10;
+}
+
+.denture-page-middle_words h1{
+    color: #ffc900;
+    font-weight: 600;
+    font-size: 60px;
+    padding-bottom: 40px;
+}
+.denture-page-middle_words p{
+    color: #4a4a4a;
+    font-size: 20px;
+    text-align: center;
+}
+/* .underline-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.underline-animation::after {
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    bottom: 0; 
+    width: 100%;
+    height: 2px;
+    background: black;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: underline 3s forwards infinite; 
+} */
+
+.faq_title_head{
+    color: #ffc900;
+    font-weight: 600;
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+
+:root {
+    --cards: 3; /* Updated to reflect the number of cards */
+    --cardHeight: 87vh;
+    --cardTopPadding: 1.5em;
+    --cardMargin: 4vw;
+}
+
+#denture-cards {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(var(--cards), var(--cardHeight));
+    gap: var(--cardMargin);
+    padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+    margin-bottom: var(--cardMargin);
+}
+
+.denture-card-scroll {
+    position: sticky;
+    top: 150px; /* Adjust as needed for spacing from the navbar */
+    padding-top: calc(var(--index) * var(--cardTopPadding));
+}
+
+.denture-card1 {
+    --index: 1;
+}
+
+.denture-card2 {
+    --index: 2;
+}
+
+.denture-card3 {
+    --index: 3;
+}
+
+.denture-card-body {
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+    height: var(--cardHeight);
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center; /* Center align vertically */
+    transition: all 0.5s;
+}
+
+.text-content {
+    margin-right: 20px; /* Add space between text and image */
+}
+
+.image-content {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+
+.denture-card1 .denture-card-body {
+    background-color: #dbe0e5;
+}
+.denture-card2 .denture-card-body {
+    background-color: #dbe0e5;
+}
+.denture-card3 .denture-card-body {
+    background-color: #dbe0e5;
+}
+
+
+.denture-card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Makes space between text and image */
+}
+
+.denture-text-section {    
+   padding-left: 50px;
+   color: #404040;
+}
+
+.denture-image-section {
+    width: 40%; /* Adjust as needed for layout balance */
+    display: flex;
+    justify-content: flex-end; /* Aligns the image to the right side */
+}
+
+.denture-image-section img {
+    width: 100%; /* Image fills its container */
+    max-width: 500px; 
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px;
+}
+.denture-large-text{
+    padding-bottom: 80px;
+}
+
+.denture-small-text{
+    margin-top: 250px;
+}
+
+.denture-number{
+    color: #ffc900;
+    font-size: 25px;
+}
+
+.accordion {
+    border: none;
+  }
+  
+  .denture_faq_card {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .accordion-button {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 35px;
+    color: #404040;
+    /* background-color: #f8f9fa; */
+    padding: 50px;
+    border: none;
+    width: 100%;
+  }
+  
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+
+  .accordion-button.collapsed {
+    /* background-color: #f8f9fa; */
+  }
+  .accordion-button::after {
+    content: none;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: transparent;
+    color: black;
+}
+  .denture_faq_card_body {
+    padding: 30px;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+  }
+  
+.accordion-item{
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+
+  /* Style for the toggle icon */
+.toggle-icon-circle {
+    background-color: #ffc900; /* Circle background color */
+    color: #ffffff; /* Icon color */
+    border-radius: 50%; /* Make it circular */
+    width: 54px;
+    height:54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    margin-left: auto; /* Push to the right */
+  }
+  .accordion-button[aria-expanded="true"] .toggle-icon-circle {
+    content: "-"; /* Change to "-" */
+    transform: rotate(0deg); /* Reset rotation */
+  }
+  .accordion-button.collapsed .toggle-icon-circle {
+    content: "+"; /* Change to "+" */
+  }
+.faq_number{
+    font-size: 20px;
+    padding-right: 10px;
+    color: #ffc900;
+}
+.dentureCollapse_text{
+    font-size: 19px;
+    color:#404040;
+}
+
+.dentureCollapse_ul{
+    font-size: 19px;
+    color: #4a4a4a;
+}
+
+/* Card styling */
+.appointment-card {
+    background-color: #f0f8ff;
+    border-radius: 20px;
+    padding: 48px;
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+}
+
+/* Icon styling */
+.appointment-icon {
+    background-color: #ffc900;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -30px;
+}
+
+/* Text styling */
+.invite-text {
+    color: #ffc900;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px 0 10px;
+}
+
+.appointment-title-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between title and button */
+    justify-content: center;
+}
+
+.appointment-title {
+    font-size: 28px;
+    color: #404040;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Button styling beside title */
+.appointment-button {
+    background-color: #ffc900;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Subtext styling */
+.appointment-subtext {
+    font-size: 21px;
+    color: #4a4a4a;
+    margin: 5px 0 20px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .denture-card-content {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .denture-image-section {
+        margin-top: 10px; /* Space between text and image when stacked */
+    }
+    .denture-card-scroll {
+        top: 120px; 
+    }
+    
+}
+
+/* Add media query for responsiveness on mobile devices */
+@media (max-width: 768px) {
+    #denture-cards {
+        grid-template-columns: 1fr; /* Stacking cards in a single column on mobile */
+    }
+}
+
+
+@keyframes underline {
+    to {
+        transform: scaleX(1); /* Scale to full width */
+    }
+}
+
+@media (max-width: 1222px){
+    .denture_image-container{
+        left: 0;
+        margin-top: 450px;
+    }
+    .denture-page-section{
+        height: 1100px;
+    }
+    .btn-appointment{
+        margin-right: 0;
+    }
+    .denture-large-text{
+        padding-bottom: 10px;
+        font-size: 25px;
+    }
+    .denture-small-text{
+        margin-top: 10px;
+    }
+    .denture-image-section {
+        width: 35%;
+        margin-left: 40px;
+}
+    
+    .dentureCollapse_ul{
+        font-size: 20px;
+    }
+    .accordion-button{
+        font-size: 25px;
+    }
+    .toggle-icon-circle{
+        width: 46px;
+        height:44px;
+
+    }
+    .faq_title_head{
+        font-size: 45px;
+    }
+}
+
+@media (max-width:768px){
+    .faq_title_head{
+        font-size: 45px;
+    }
+    .denture-heading {
+        font-size: 65px;
+    }
+    .denture-subheading {
+        font-size: 22px;
+    }
+    .navbar-brand{
+        margin-bottom: -40px;
+    }
+    .denture-large-text{
+        padding-bottom: 10px;
+    }
+    .denture-small-text{
+        margin-top: 10px;
+    }
+    .denture-image-section {
+        width: 65%;
+        margin-left: 40px;
+}
+}
+
+@media (max-width:480px){
+    .faq_title_head{
+        font-size: 40px;
+    }
+    .denture-large-text{
+        padding-bottom: 0;
+    }
+    .denture-small-text{
+        margin-top: 0px;
+    }
+    .denture-page-section {
+        height: 900px;
+    }
+    .denture_image-container{
+        margin-top: 400px;
+        left: 5px;
+    }
+    .denture-heading {
+        font-size: 55px;
+    }
+    .denture-subheading {
+        font-size: 20px;
+    }
+    .breadcrumb_denture{
+        margin-top: 150px;
+        font-size: 18px;
+    }
+    .denture-image-section {
+            width: 85%;
+            margin-left: 40px;
+    }
+    .dentureCollapse_text{
+        font-size: 15px;
+    }
+    
+    .dentureCollapse_ul{
+        font-size: 15px;
+    }
+    .accordion-button{
+        font-size: 20px;
+    }
+    .toggle-icon-circle{
+        width: 46px;
+        height:34px;
+
+    }
+    .faq_number{
+        padding-right: 25px;
+    }
+    .appointment-card {
+        padding: 48px;
+        width: 360px;
+    }
+    .appointment-title {
+        font-size: 20px;
+    }
+    
+    /* Button styling beside title */
+    .appointment-button {
+        width: 40px;
+        height: 40px;
+    }
+    
+    /* Subtext styling */
+    .appointment-subtext {
+        font-size: 15px;
+    }
+    .appointment-content{
+        width: 300px;
+    }
+    .invite-text{
+        font-size: 18px;
+    }
 }
 
 @media (max-width:768px){
