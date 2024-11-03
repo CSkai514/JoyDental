@@ -1760,8 +1760,11 @@ section {
     align-items: center;
     gap: 10px; /* Space between title and button */
     justify-content: center;
+    
 }
-
+.appointment-title-container a{
+    text-decoration: none;
+}
 .appointment-title {
     font-size: 28px;
     color: #404040;
@@ -1781,7 +1784,10 @@ section {
     justify-content: center;
     cursor: pointer;
 }
-
+.appointment-button a {
+    text-decoration: none;
+    color: white;
+}
 /* Subtext styling */
 .appointment-subtext {
     font-size: 21px;
