@@ -47,7 +47,7 @@ section {
 }
 
 .navbar a.active {
-    color: #ffc900 !important;
+    color: white !important;
     font-weight: 600;
 }
 
@@ -93,6 +93,13 @@ section {
     width: auto;  /* This will maintain the aspect ratio of the image */
     max-width: 130px; /* Optional: set a maximum width if needed */
 }
+
+.dropdown-item.active, .dropdown-item:active{
+    background-color: #ffc900;
+    color: white;
+}
+
+
 .offcanvas {
     width: 70% !important; /* Adjust width to cover half the screen */
 }
@@ -1475,6 +1482,19 @@ section {
     max-width: 400px;
 }
 
+.denture_image-container-dental_implant{
+    position: absolute;
+    right: 0;
+    z-index: 1 !important;
+    background-color: #3385d6;
+    border-radius: 20px;
+    padding: 1rem;
+    margin-top: 150px;
+    transform: rotate(5.5deg);
+    width: fit-content;
+    max-width: 350px;
+}
+
 .denture-right-image {
     width: 400px; /* Set desired width for the image */
     max-width: 100%;
@@ -1482,7 +1502,12 @@ section {
     display: block;
 }
 
-
+.denture-right-image_dental_implant{
+    width: 400px; /* Set desired width for the image */
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+}
 /* Image label styling */
 .image-label {
     position: absolute;
@@ -1643,7 +1668,9 @@ section {
 .denture-small-text{
     margin-top: 250px;
 }
-
+.denture-small-text2{
+    margin-top: 50px;
+}
 .denture-number{
     color: #ffc900;
     font-size: 25px;
@@ -1847,6 +1874,10 @@ section {
         left: 0;
         margin-top: 450px;
     }
+    .denture_image-container-dental_implant{
+        left: 0;
+        margin-top: 450px;
+    }
     .denture-page-section{
         height: 1100px;
     }
@@ -1900,10 +1931,17 @@ section {
     .denture-small-text{
         margin-top: 10px;
     }
+    .denture-small-text2{
+        margin-top: 5px;
+    }
     .denture-image-section {
         width: 65%;
         margin-left: 40px;
 }
+    .denture_image-container-dental_implant{
+        left: 0;
+        margin-top: 500px;
+    }
 }
 
 @media (max-width:480px){
@@ -1916,6 +1954,10 @@ section {
     .denture-small-text{
         margin-top: 0px;
     }
+    .denture-small-text2{
+        margin-top: 10px;
+        font-size: 14px;
+    }
     .denture-page-section {
         height: 900px;
     }
@@ -1926,6 +1968,10 @@ section {
     .denture_image-container_teethwhiting{
         left: 0;
         margin-top: 420px;
+    }
+    .denture_image-container-dental_implant{
+        left: 0;
+        margin-top: 470px;
     }
     .denture-heading {
         font-size: 55px;
@@ -2115,9 +2161,10 @@ section {
     }
 
     .navbar-logo {
-        height: 100px; /* Adjust this value to fit your desired logo height */
-        width: auto;  /* This will maintain the aspect ratio of the image */
-        max-width: 100px; /* Optional: set a maximum width if needed */
+        height: 100px;
+        width: auto;
+        max-width: 100px;
+        margin-bottom: 30px;
     }
     .navbar-collapse{
         background-color: white;
@@ -2131,5 +2178,8 @@ section {
     }
     .card-img-top {
         height: 40px; /* Reduce image height on smaller screens */
+    }
+    .denture-right-image_dental_implant{
+        width: 350px; /* Set desired width for the image */
     }
 }
