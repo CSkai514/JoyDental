@@ -1448,7 +1448,15 @@ section {
     line-height: 0.95 !important;
     z-index: 10;
 }
-
+.triple-wording-heading{
+    font-size: 85px;
+    color: #404040 ; /* Navy blue */
+    font-weight: 700;
+    position: relative; /* Set position to relative to allow absolute positioning of the image */
+    display: inline-block; /* Make the h1 an inline-block to contain the image properly */
+    line-height: 0.95 !important;
+    z-index: 10;
+}
 .denture-subheading {
     font-size: 24px;
     color: #4a4a4a;
@@ -1456,7 +1464,13 @@ section {
     padding-top: 10px;
     z-index: 10;
 }
-
+.CrownNbridge_sub_text{
+    font-size: 18px;
+    color: #4a4a4a;
+    margin-bottom: 20px; 
+    padding-top: 10px;
+    z-index: 10;
+}
 .denture_image-container {
     position: absolute;
     right: 0;
@@ -1470,6 +1484,18 @@ section {
     max-width: 400px;
 }
 .denture_image-container_teethwhiting{
+    position: absolute;
+    right: 0;
+    z-index: 1 !important;
+    background-color: #3385d6;
+    border-radius: 20px;
+    padding: 1rem;
+    margin-top: 150px;
+    transform: rotate(5.5deg);
+    width: fit-content;
+    max-width: 400px;
+}
+.denture_image-container_crown{
     position: absolute;
     right: 0;
     z-index: 1 !important;
@@ -1675,6 +1701,7 @@ section {
 
 .denture-small-text{
     margin-top: 250px;
+    font-size: 18px;
 }
 .denture-small-text2{
     margin-top: 50px;
@@ -1882,6 +1909,10 @@ section {
         left: 0;
         margin-top: 450px;
     }
+    .denture_image-container_crown{
+        left: 0;
+        margin-top: 450px;
+    }
     .denture_image-container-dental_implant{
         left: 0;
         margin-top: 450px;
@@ -1927,8 +1958,14 @@ section {
     .denture-heading {
         font-size: 65px;
     }
+    .triple-wording-heading{
+        font-size: 65px;
+    }
     .denture-subheading {
         font-size: 22px;
+    }
+    .CrownNbridge_sub_text{
+        font-size: 17px;
     }
     .navbar-brand{
         margin-bottom: -40px;
@@ -1949,6 +1986,24 @@ section {
     .denture_image-container-dental_implant{
         left: 0;
         margin-top: 500px;
+    }
+}
+@media (max-width: 412px){
+    .denture_image-container_crown{
+        margin-top: 470px !important;
+        height: 322px;
+    }
+    .denture_image-container-dental_implant{
+        margin-top: 520px !important;
+        height: 302px;
+    }
+    .denture-right-image{
+        height: 300px;
+        width: 300px;
+    }
+    .denture-right-image_dental_implant{
+        height: 280px;
+        width: 280px;
     }
 }
 
@@ -1977,6 +2032,10 @@ section {
         left: 0;
         margin-top: 450px;
     }
+    .denture_image-container_crown{
+        left: 0;
+        margin-top: 430px;
+    }
     .denture_image-container-dental_implant{
         left: 0;
         margin-top: 470px;
@@ -1984,8 +2043,14 @@ section {
     .denture-heading {
         font-size: 55px;
     }
+    .triple-wording-heading{
+        font-size: 52px;
+    }
     .denture-subheading {
         font-size: 20px;
+    }
+    .CrownNbridge_sub_text{
+        font-size: 16px;
     }
     .breadcrumb_denture{
         margin-top: 150px;
@@ -2003,12 +2068,13 @@ section {
         font-size: 15px;
     }
     .accordion-button{
-        font-size: 20px;
+        font-size: 18px;
     }
     .toggle-icon-circle{
         width: 46px;
-        height:34px;
-
+        height:44px;
+        min-width: 46px;
+        min-height: 40px;
     }
     .faq_number{
         padding-right: 25px;
