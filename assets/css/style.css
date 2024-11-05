@@ -33,6 +33,10 @@ section {
     overflow: clip;
   }
   
+.dropdown-item.active, .dropdown-item:active{
+    background-color: rgba(247, 246, 245, 0.884);
+    color: white !important;
+}
 .navbar {
     margin: 0 2%;
     position: fixed;
@@ -94,10 +98,6 @@ section {
     max-width: 130px; /* Optional: set a maximum width if needed */
 }
 
-.dropdown-item.active, .dropdown-item:active{
-    background-color: #ffc900;
-    color: white;
-}
 
 
 .offcanvas {
