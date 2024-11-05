@@ -47,7 +47,7 @@ section {
 }
 
 .navbar a.active {
-    color: white !important;
+    color: #ffc900 !important;
     font-weight: 600;
 }
 
@@ -290,7 +290,7 @@ section {
     justify-content: space-between; /* Space between items */
     align-items: flex-start; /* Align items to the start */
     margin-top: 40px; /* Margin above the contact info */
-    width: 100%; /* Make sure it takes the full width */
+    width: 107%; /* Make sure it takes the full width */
     gap: 20px; /* Space between items */
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
@@ -345,7 +345,7 @@ section {
 
 .info-subtext {
     position: relative;
-    font-size: 18px; /* Subtext size */
+    font-size: 17px; /* Subtext size */
     color: #6c6c6c; /* Subtext color */
     z-index: 10;
 }
@@ -369,6 +369,7 @@ section {
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
     .contact-info{
         gap: 10px;
+        width: 100%;
     }
     .info-item {
         width: 90%;
@@ -589,6 +590,9 @@ section {
     border-radius: 15px;
     overflow: hidden; 
 }
+.join_community-section{
+    background-color: #f0f8ff;
+}
 
 .post_slide {
     height: 550px; /* Adjust height for the image */
@@ -680,7 +684,7 @@ section {
 /* Change the color of the number on item hover */
 .treatment-item:hover .number {
     color: #fff; /* Change to your desired hover color when the item is hovered */
-
+    font-size: 30px;
 }
 
 .item-container {
@@ -836,7 +840,14 @@ section {
     .item_container_div{
         padding-inline: 25px !important;
     }
+    .treatment-item:hover .number {
+        font-size: 18px;
+        margin-left: 5px;
     
+    }
+    .treatment-item:hover .icon{
+        margin-right: 8px;
+    }
 }
 
 .hero-section {
@@ -2144,7 +2155,7 @@ section {
     }
 
     .treatment-item{
-        padding: 25px;
+        padding: 3px;
     }
     .treatment-item p {
         font-size: 20px !important;
@@ -2203,13 +2214,16 @@ section {
     }
 
     .post_slide {
-        margin:40px;
+        margin:15px;
+        padding-bottom: 100px;
     }
     .post_slide .post_slide{
         height: 350px;
         width: 250px;
     }
-
+    .join_community-section{
+        height: 790px;
+    }
     .special_iconCSS{
         font-size: 65px;
         padding-right: 80px;
