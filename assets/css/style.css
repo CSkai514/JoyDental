@@ -590,8 +590,16 @@ section {
     border-radius: 15px;
     overflow: hidden; 
 }
+
+.our_panel-section{
+    background-color: #f0f8ff;
+    padding:0;
+    padding-bottom: 55px;
+}
+
 .join_community-section{
     background-color: #f0f8ff;
+    height: 920px;
 }
 
 .post_slide {
@@ -1030,6 +1038,7 @@ section {
     color: black;
     text-decoration: none;
     font-weight: 700;
+    font-size: 20px;
   }
   
   .footer-logo {
@@ -1072,9 +1081,9 @@ section {
     padding-left: 400px;
 } */
 @media (max-width:480px){
-    /* .right-footer-section{
-        padding-left: 0;
-    } */
+    .footer-link{
+        font-size: 18px;
+      }
   .footer-logo {
     width: 150px; 
     margin-right: 0;
