@@ -2108,6 +2108,10 @@ section {
 }
 
 @media (max-width:480px){
+    .navbar-brand {
+        margin-bottom: -70px;
+        height: 180px;
+    }
     .faq_title_head{
         font-size: 40px;
     }
@@ -2386,16 +2390,16 @@ section {
     }
 
     .navbar{
-        margin: 0 2%;
+        margin: 0 2.5%;
         width: 95%;
         max-height: 155px;
     }
 
     .navbar-logo {
-        height: 150px;
-        width: auto;
-        max-width: 150px;
-       padding-bottom: 30px;
+        height: 165px;
+        max-width: 165px;
+        margin-top: -35px;
+        margin-left: -24px;
     }
     .navbar-collapse{
         background-color: white;
