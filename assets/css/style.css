@@ -1396,10 +1396,10 @@ section {
 }
 
 .owl-carousel .item img {
-    width: 100%; /* Ensures the image takes up the entire width of the container */
-    height: auto; /* Keeps the aspect ratio */
-    border-radius: 15px; /* Optional: Adds rounded corners */
-    object-fit: cover; /* Ensures the image covers the container without distortion */
+    width: 100%; 
+    height: auto; 
+    border-radius: 15px; 
+    object-fit: cover; 
 }
 
 .owl-carousel .item {
@@ -2063,6 +2063,9 @@ section {
     }
 }
 @media (max-width: 412px){
+    .owl-carousel .item img {
+        max-width: 400px !important;
+    }
     .denture_image-container_crown{
         margin-top: 480px !important;
         height: 322px;
@@ -2088,6 +2091,12 @@ section {
         height:44px;
         min-width: 46px;
         min-height: 40px;
+    }
+    .card {
+        margin-left: 21px !important;
+    }
+    .our_panel-section {
+        margin-top: -5px !important;
     }
 }
 
@@ -2199,13 +2208,14 @@ section {
 @media (max-width:768px){
     .payment_h1_title{
         font-size: 40px;
+        padding-bottom: 10px;
     }
     
 }
 
 @media (max-width:480px){
     .our_panel-section{
-        margin-top: -24px;
+        margin-top: -18px;
     }
     .landing-page-section{
         height: 1270px;
@@ -2220,6 +2230,10 @@ section {
         bottom: 5vw;
         right: 5vw;
     }
+    /* .owl-carousel{
+        height: 500px !important;
+    } */
+     
     .owl-carousel .owl-nav i{
         font-size: 40px;
     }
@@ -2324,16 +2338,19 @@ section {
         padding-right: 80px;
         margin-top: 20px;
     }
+
     .owl-carousel .item{
-        height: 250px !important;
-        padding-bottom: 10px;
-        
+        height: 500px !important;
     }
     .owl-carousel .item img {
         max-height: 100% !important;;
         margin: 0 auto; /* Centers the image */
+        min-height: 400px;
+        max-width: 420px;
     }
-    
+    .owl-theme .owl-nav{
+        margin-top: 0;
+    }
     .owl-carousel .item .caption {
         font-size: 14px !important;
     }
@@ -2387,7 +2404,7 @@ section {
     .card {
         width: 300px;
         height: 180px;
-        margin-left: 40px;
+        margin-left: 33px;
     }
     .card-img-top {
         height: 40px !important; /* Reduce image height on smaller screens */
