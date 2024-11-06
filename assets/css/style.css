@@ -35,7 +35,7 @@ section {
   
 .dropdown-item.active, .dropdown-item:active{
     background-color: rgba(247, 246, 245, 0.884);
-    color: white !important;
+    color: #ffc900 ;
 }
 .navbar {
     margin: 0 2%;
@@ -98,7 +98,10 @@ section {
     max-width: 130px; /* Optional: set a maximum width if needed */
 }
 
-
+.navbar-nav .nav-link.active{
+    color: #ffc900 ;
+    background-color: rgba(247, 246, 245, 0.884);
+}
 
 .offcanvas {
     width: 70% !important; /* Adjust width to cover half the screen */
