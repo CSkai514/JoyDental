@@ -100,7 +100,7 @@ section {
 
 .navbar-nav .nav-link.active{
     color: #ffc900 ;
-    background-color: rgba(247, 246, 245, 0.884);
+    /* background-color: rgba(247, 246, 245, 0.884); */
 }
 
 .offcanvas {
@@ -286,6 +286,9 @@ section {
     }
     .navbar-nav .nav-item {
         margin-right: 0px; 
+    }
+    .navbar-nav .nav-link.active{
+        background-color: rgba(247, 246, 245, 0.884);
     }
 }
 
@@ -2398,9 +2401,9 @@ section {
         background-color: white;
         text-align: center;
     }
-    .location_navBTN{
+    /* .location_navBTN{
         margin-right: 50px;
-    }
+    } */
     .card_container{
         padding-inline: 30px;
     }
