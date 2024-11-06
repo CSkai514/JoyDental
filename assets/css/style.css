@@ -1148,6 +1148,10 @@ section {
  margin-top: -15px;
 }
 
+.location_mainsection{
+    height: 400px !important;
+}
+
 }
 @media(max-width: 768px){
     .footer-location-link, .footer-contact {
