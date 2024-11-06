@@ -2270,7 +2270,7 @@ section {
         padding: 15px 15px;
     }
     .landing-heading {
-        font-size: 45px;
+        font-size: 50px;
         margin-top: 105px;
     }
     .landing-subheading {
@@ -2300,20 +2300,21 @@ section {
     .info-item img {
         width: 45px;
         height: 45px;
-        margin-left: -15px;
+        margin-left: 2px;
     }
     .info-item i {
         width: 55px;
         height: 55px;
-        margin-left: -16px;
+        margin-left: 0;
+        margin-right: 0;
     }
     .info_img_phone_css{
-        margin-left: 48px;
+        margin-left: 31px;
     }
 
     .info-text {
         font-size: 12px;
-        padding-left: 20px;
+        padding-left: 0px;
     }
 
     .info-text strong {
