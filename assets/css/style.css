@@ -1524,7 +1524,7 @@ section {
     margin-top: 150px;
     transform: rotate(5.5deg);
     width: fit-content;
-    max-width: 400px;
+    max-width: 360px;
 }
 .denture_image-container_crown{
     position: absolute;
@@ -1539,6 +1539,18 @@ section {
     max-width: 400px;
 }
 
+.denture_image-container_scaling_polishing{
+    position: absolute;
+    right: 0;
+    z-index: 1 !important;
+    background-color: #3385d6;
+    border-radius: 20px;
+    padding: 1rem;
+    margin-top: 150px;
+    transform: rotate(5.5deg);
+    width: fit-content;
+    max-width: 400px;
+}
 .denture_image-container-dental_implant{
     position: absolute;
     right: 0;
@@ -1943,6 +1955,11 @@ section {
     .denture_image-container_crown{
         left: 0;
         margin-top: 450px;
+        max-width: 380px;
+    }
+    .denture_image-container_scaling_polishing{
+        left: 0;
+        margin-top: 450px;
     }
     .denture_image-container-dental_implant{
         left: 0;
@@ -2029,12 +2046,16 @@ section {
 }
 @media (max-width: 412px){
     .denture_image-container_crown{
-        margin-top: 470px !important;
+        margin-top: 480px !important;
         height: 322px;
     }
     .denture_image-container-dental_implant{
         margin-top: 520px !important;
         height: 302px;
+    }
+    .denture_image-container_scaling_polishing{
+        margin-top: 380px !important;
+        max-width: 360px !important;
     }
     .denture-right-image{
         height: 300px;
@@ -2084,6 +2105,10 @@ section {
     .denture_image-container-dental_implant{
         left: 0;
         margin-top: 470px;
+    }
+    .denture_image-container_scaling_polishing{
+        margin-top: 480px !important;
+        max-width: 340px !important;
     }
     .denture-heading {
         font-size: 55px;
