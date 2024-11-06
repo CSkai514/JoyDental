@@ -219,9 +219,9 @@ section {
     z-index: 10;
 }
 .smile-logo {
-    width: 150px; /* Set the desired width */
-    height: 150px; /* Set the desired height */
-    position: absolute; /* Make the image absolute inside the h1 */
+    width: 150px;
+    height: 150px; 
+    position: absolute;
     top: 85px;
     right: -10px;
 }
@@ -230,35 +230,36 @@ section {
     position: absolute;
     right: 0;
     z-index: 1 !important;
-    transform: translate(-55%, 5%); /* Adjust position as needed */
+    transform: translate(-55%, 5%); 
 }
 
 .right-image {
-    width: 400px; /* Set desired width for the image */
+    width: 350px;
     max-width: 100%;
 }
 
 .header-gradient {
     position: absolute;
+    top: 60px;
     bottom: 0;
     right: 0;
     left: 0;
-    height: 100%; /* Cover the entire height of the container */
+    height: 100%;
     background: linear-gradient(180deg, rgba(240, 248, 255, 0.15) 20%, rgba(240, 248, 255, 0.92) 80%);
-    z-index: 8; /* Make sure it covers both the image and contact-info but is behind the text */
+    z-index: 8;
 }
 
 @media (max-width: 768px) {
     .landing-heading {
-        font-size: 60px; /* Decrease font size on smaller screens */
+        font-size: 60px;
         margin-top: 140px;
     }
 
     .smile-logo {
-        width: 150px; /* Reduce logo size for mobile */
+        width: 150px;
         height: 150px;
-        top: 40px; /* Adjust the position of the logo */
-        right: -40px; /* Move the logo closer */
+        top: 40px;
+        right: -40px;
     }
     .hero-title{
             font-size: 3.5rem !important;
@@ -281,7 +282,7 @@ section {
 
 @media (max-width: 480px) {
     .contact-info{
-        margin-top: 0px !important;
+        margin-top: -20px !important;
     }
     .navbar-nav .nav-item {
         margin-right: 0px; 
@@ -314,6 +315,10 @@ section {
     font-size: 95px;
     padding-right: 80px;
     
+}
+.special_iconCSS2{
+    font-size: 95px;
+    padding-right: 80px;
 }
 
 .info-item img{
@@ -356,10 +361,10 @@ section {
 
 /* Divider Between Items */
 .info-divider {
-    height: 150px; /* Adjust height */
-    width: 2px; /* Width for the divider */
-    background-color: #858585; /* Divider color */
-    margin: 0 10px; /* Space around the divider */
+    height: 165px; 
+    width: 2px;
+    background-color: #858585; 
+    margin: 0 10px; 
     z-index: 10;
 }
 
@@ -416,6 +421,10 @@ section {
         font-size: 16px; /* Smaller subtext size */
     }
     .special_iconCSS{
+        margin-bottom: 60px !important;
+        font-size: 70px !important;
+    }
+    .special_iconCSS2{
         margin-bottom: 60px !important;
         font-size: 70px !important;
     }
@@ -494,6 +503,9 @@ section {
     }
     .p_we_style{
         font-size: 18px;
+    }
+    .image-container {
+        left:18px;
     }
 }
 
@@ -1131,6 +1143,11 @@ section {
 .card-location-content p {
     font-size: 16px !important;
 }
+
+.h1_title_we {
+ margin-top: -15px;
+}
+
 }
 @media(max-width: 768px){
     .footer-location-link, .footer-contact {
@@ -2174,6 +2191,9 @@ section {
     .invite-text{
         font-size: 18px;
     }
+    .right-image {
+        width: 330px;
+    }
 }
 
 @media (max-width:768px){
@@ -2184,6 +2204,13 @@ section {
 }
 
 @media (max-width:480px){
+    .our_panel-section{
+        margin-top: -24px;
+    }
+    .landing-page-section{
+        height: 1270px;
+    }
+    
     .header_wrapper {
     padding-top: 10px;
 }
@@ -2219,7 +2246,7 @@ section {
     }
     .landing-heading {
         font-size: 45px;
-        margin-top: 90px;
+        margin-top: 105px;
     }
     .landing-subheading {
         font-size: 18px;
@@ -2240,32 +2267,32 @@ section {
         margin-top: -15px;
     }
     .smile-logo {
-        width: 100px; /* Make the logo smaller */
+        width: 100px; 
         height: 100px;
         top: 23px;
-        right: -20px; /* Adjust position accordingly */
+        right: -20px;
     }
     .info-item img {
-        width: 65px; /* Further reduce icon size */
-        height: 65px;
-        margin-left: -16px;
+        width: 45px;
+        height: 45px;
+        margin-left: -15px;
     }
     .info-item i {
-        width: 65px; /* Further reduce icon size */
-        height: 65px;
+        width: 55px;
+        height: 55px;
         margin-left: -16px;
     }
     .info_img_phone_css{
-        margin-left: 10px;
+        margin-left: 48px;
     }
 
     .info-text {
-        font-size: 12px; /* Smaller text */
+        font-size: 12px;
         padding-left: 20px;
     }
 
     .info-text strong {
-        font-size: 18px; /* Slightly larger for emphasis */
+        font-size: 18px;
     }
     
     .another_span_info_text{
@@ -2274,7 +2301,7 @@ section {
     }
 
     .info-subtext {
-        font-size: 14px; /* Smaller subtext size */
+        font-size: 14px;
     }
 
     .post_slide {
@@ -2289,8 +2316,13 @@ section {
         height: 790px;
     }
     .special_iconCSS{
-        font-size: 65px;
+        font-size: 45px;
         padding-right: 80px;
+    }
+    .special_iconCSS2{
+        font-size: 45px;
+        padding-right: 80px;
+        margin-top: 20px;
     }
     .owl-carousel .item{
         height: 250px !important;
