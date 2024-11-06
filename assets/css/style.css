@@ -9,7 +9,7 @@ html{
 }
 
 .section_title_sub{
-    color: #404040 ;
+    color: #4d4d4d  ;
     font-weight: 700;
     font-size: 25px;
 }
@@ -201,7 +201,7 @@ section {
 /* Landing Heading Styles */
 .landing-heading {
     font-size: 100px;
-    color: #404040 ;
+    color: #4d4d4d;
     font-weight: 700;
     position: relative; /* Set position to relative to allow absolute positioning of the image */
     display: inline-block; /* Make the h1 an inline-block to contain the image properly */
@@ -215,6 +215,7 @@ section {
     color: #4a4a4a;
     margin-bottom: 20px; 
     padding-top: 10px;
+    line-height:0.95 !important;
     z-index: 10;
 }
 .smile-logo {
@@ -333,7 +334,7 @@ section {
 .info-text {
     padding-left: 40px;
     font-size: 16px; /* Main text size */
-    color: #404040 ; /* Navy blue text */
+    color: #4d4d4d  ; /* Navy blue text */
     z-index: 10;
 }
 
@@ -521,7 +522,7 @@ section {
 .card-title {
     font-size: 20px;
     font-weight: bold;
-    color: #404040 ; /* Navy blue for titles */
+    color: #4d4d4d  ; /* Navy blue for titles */
     margin-bottom: 15px;
 }
 
@@ -799,7 +800,7 @@ section {
 .treatment-item p {
     font-size: 38px;
     text-align: left; /* Align text to the left */
-    color: #404040 ; /* Set text color to black */
+    color: #4d4d4d  ; /* Set text color to black */
     flex: 1; /* Allow the text to grow and fill available space */
     font-weight: 600;
 }
@@ -882,14 +883,14 @@ section {
 .hero-title {
     font-size: 6rem;
     font-weight: 700; /* Make the font bold */
-    color: #404040; /* Dark color for text */
+    color: #4d4d4d ; /* Dark color for text */
     margin: 0; /* Remove default margin */
 
     line-height: 0.95;
 }
 
 .hero-subtitle {
-    color: #404040 ;
+    color: #4d4d4d  ;
     font-weight: 700;
     font-size: 25px;
     margin-top: 20px; /* Space between title and subtitle */
@@ -1250,7 +1251,7 @@ section {
 
 .card-location-content h3 {
     font-size: 35px;
-    color: #404040; /* Adjust color to match design */
+    color: #4d4d4d ; /* Adjust color to match design */
     margin: 0;
     font-weight: 700;
     padding: 20px;
@@ -1297,7 +1298,7 @@ section {
     border-radius: 10px;
     position: relative; /* For stacking with SVG */
     z-index: 1; /* Bring content on top of SVG */
-    color: #404040 ;
+    color: #4d4d4d  ;
 }
 
 .card-content h1 {
@@ -1472,7 +1473,7 @@ section {
 /* Landing Heading Styles */
 .denture-heading {
     font-size: 100px;
-    color: #404040 ; /* Navy blue */
+    color: #4d4d4d  ; /* Navy blue */
     font-weight: 700;
     position: relative; /* Set position to relative to allow absolute positioning of the image */
     display: inline-block; /* Make the h1 an inline-block to contain the image properly */
@@ -1481,7 +1482,7 @@ section {
 }
 .triple-wording-heading{
     font-size: 85px;
-    color: #404040 ; /* Navy blue */
+    color: #4d4d4d  ; /* Navy blue */
     font-weight: 700;
     position: relative; /* Set position to relative to allow absolute positioning of the image */
     display: inline-block; /* Make the h1 an inline-block to contain the image properly */
@@ -1593,7 +1594,7 @@ section {
 
 .breadcrumb_denture{
     font-size: 20px;
-    color: #404040 ;
+    color: #4d4d4d  ;
     margin-top: 180px;
     z-index: 10;
 }
@@ -1723,7 +1724,7 @@ section {
 
 .denture-text-section {    
    padding-left: 50px;
-   color: #404040;
+   color: #4d4d4d ;
 }
 
 .denture-image-section {
@@ -1767,7 +1768,7 @@ section {
     justify-content: space-between;
     font-weight: bold;
     font-size: 35px;
-    color: #404040;
+    color: #4d4d4d ;
     /* background-color: #f8f9fa; */
     padding: 50px;
     border: none;
@@ -1828,7 +1829,7 @@ section {
 }
 .dentureCollapse_text{
     font-size: 19px;
-    color:#404040;
+    color:#4d4d4d ;
 }
 
 .dentureCollapse_ul{
@@ -1884,7 +1885,7 @@ section {
 }
 .appointment-title {
     font-size: 28px;
-    color: #404040;
+    color: #4d4d4d ;
     font-weight: bold;
     margin: 0;
 }
@@ -2217,9 +2218,27 @@ section {
         padding: 15px 15px;
     }
     .landing-heading {
-        font-size: 45px; /* Further reduce the font size */
+        font-size: 45px;
+        margin-top: 90px;
     }
-
+    .landing-subheading {
+        font-size: 18px;
+        color: #4a4a4a;
+    }
+    .info-item{
+        padding: 0;
+        padding-left: 20px;
+    }
+    .info-item:first-of-type {
+        padding-top: 20px;
+    }
+    .info-item-second {
+        margin-top: -15px;
+    }
+    
+    .info-item:last-of-type {
+        margin-top: -15px;
+    }
     .smile-logo {
         width: 100px; /* Make the logo smaller */
         height: 100px;
@@ -2313,13 +2332,14 @@ section {
     .navbar{
         margin: 0 2%;
         width: 95%;
+        max-height: 155px;
     }
 
     .navbar-logo {
-        height: 100px;
+        height: 150px;
         width: auto;
-        max-width: 100px;
-        margin-bottom: 30px;
+        max-width: 150px;
+       padding-bottom: 30px;
     }
     .navbar-collapse{
         background-color: white;
@@ -2331,8 +2351,14 @@ section {
     .card_container{
         padding-inline: 30px;
     }
+
+    .card {
+        width: 300px;
+        height: 180px;
+        margin-left: 40px;
+    }
     .card-img-top {
-        height: 40px; /* Reduce image height on smaller screens */
+        height: 40px !important; /* Reduce image height on smaller screens */
     }
     .denture-right-image_dental_implant{
         width: 350px; /* Set desired width for the image */
