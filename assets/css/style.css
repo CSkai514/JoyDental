@@ -865,8 +865,12 @@ section {
     .number {
         font-size: 20px; /* Adjust number size */
     }
+    .section_title_sub{
+        font-size: 20px;
+    }
     .treatment_h1_title{
-        font-size: 45px;
+        font-size: 40px;
+        padding-bottom: 40px;
     }
     
 }
