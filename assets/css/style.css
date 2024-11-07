@@ -1078,9 +1078,9 @@ section {
     font-size: 20px;
   }
   
-  .footer-logo {
+  /* .footer-logo {
     width: 250px; 
-  }
+  } */
   
   .footer-location-link, .footer-contact {
     font-size: 20px;
@@ -1120,7 +1120,15 @@ section {
 @media (max-width:480px){
     .footer-link{
         font-size: 18px;
+        margin-left: 20px;
       }
+    .social_icon_footer{
+        margin-left:2px;
+        padding-bottom: 24px;
+    }
+    .copyright_footer_msg{
+        margin-left:15px;
+    }
   .footer-logo {
     width: 150px; 
     margin-right: 0;
@@ -1128,6 +1136,10 @@ section {
   .footer-location-link, .footer-contact {
     font-size: 18px;
     margin-left: 20px;
+  }
+  .footer-social-link{
+    margin-left:13px;
+
   }
   .card-location {
     height: 500px !important;
