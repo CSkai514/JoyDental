@@ -319,11 +319,14 @@ section {
 .special_iconCSS{
     font-size: 95px;
     padding-right: 80px;
-    
+    color:#ff9157;
+    margin-top: 5px;
 }
 .special_iconCSS2{
     font-size: 95px;
     padding-right: 80px;
+    color: #6f6f6f;
+    margin-bottom: 20px;
 }
 
 .info-item img{
@@ -2346,6 +2349,7 @@ section {
         width: 45px;
         height: 45px;
         margin-left: 2px;
+        margin-bottom: 20px;
     }
     .info-item i {
         width: 55px;
@@ -2367,7 +2371,8 @@ section {
     }
     
     .another_span_info_text{
-        font-size: 18px;    
+        font-size: 19px;    
+        line-height: 0.9;
     }
     .info-subtext {
         font-size: 15px;
@@ -2387,11 +2392,12 @@ section {
     .special_iconCSS{
         font-size: 45px;
         padding-right: 80px;
+        margin-bottom: 5px;
     }
     .special_iconCSS2{
         font-size: 45px;
         padding-right: 80px;
-        margin-top: 20px;
+       
     }
 
     .owl-carousel .item{
