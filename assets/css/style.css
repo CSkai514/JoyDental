@@ -1508,8 +1508,9 @@ section {
     font-size: 50px;
     padding-bottom: 40px;
 }
-
-
+.mobile_treatment_card_section{
+    display: none;
+}
 .denture-page-section {
     background-color: #f0f8ff; /* Light blue background */
     padding: 60px 20px; /* Top/bottom padding, left/right padding */
@@ -1749,6 +1750,29 @@ section {
     transition: all 0.5s;
 }
 
+.midsize-denture-card-body{
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+    height: var(--cardHeight);
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center; /* Center align vertically */
+    transition: all 0.5s;
+}
+
+.smaller-denture-card-body{
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+    height: var(--cardHeight);
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center; /* Center align vertically */
+    transition: all 0.5s;
+}
 .text-content {
     margin-right: 20px; /* Add space between text and image */
 }
@@ -2264,7 +2288,13 @@ section {
     
 }
 
+.new_mobile_treatment_card_section{
+    display: none;
+}
 @media (max-width:480px){
+    .new_mobile_treatment_card_section{
+        display: block;
+    }
     .payment_h1_title{
         font-size: 25px;
         padding-bottom: 10px;
@@ -2369,7 +2399,7 @@ section {
         margin-right: 0;
     }
     .info_img_phone_css{
-        margin-left: 31px;
+        margin-left: 20px;
     }
 
     .info-text {
@@ -2479,5 +2509,125 @@ section {
     }
     .denture-right-image_dental_implant{
         width: 350px; /* Set desired width for the image */
+    }
+
+
+    .treatment_card_section{
+        display: none;
+    }
+    :root {
+        --new-cardHeight: 87vh;
+        --new-cardTopPadding: 1.5em;
+        --new-cardMargin: 4vw;
+    }
+    
+    #new_denture-cards {
+        list-style: none;
+        padding-left: 0;
+        padding-bottom: var(--new-cardTopPadding);
+    }
+    
+    .new_denture-card {
+        margin-bottom: var(--new-cardMargin);
+        padding-top: var(--new-cardTopPadding);
+    }
+    
+    .new_denture-card-body {
+        box-sizing: border-box;
+        padding: 30px;
+        border-radius: 50px;
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        transition: all 0.5s;
+        max-width: 390px;
+        margin: 0 auto ;
+    }
+    .smaller-denture-card-body{
+        box-sizing: border-box;
+        padding: 30px;
+        border-radius: 50px;
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        transition: all 0.5s;
+        max-width: 390px;
+        margin: 0 auto;
+    }
+    .midsize-denture-card-body
+    {
+        box-sizing: border-box;
+        padding: 30px;
+        border-radius: 50px;
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+        height: 750px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        transition: all 0.5s;
+        max-width: 390px;
+        margin: 0 auto;
+    }
+    .new_denture-card1 .new_denture-card-body,
+    .new_denture-card2 .new_denture-card-body,
+    .new_denture-card3 .new_denture-card-body,
+    .smaller-denture-card-body,
+    .midsize-denture-card-body {
+        background-color: #dbe0e5;
+    }
+    
+    .new_denture-card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Aligns content to the left */
+    }
+    
+    .new_denture-text-section {
+        padding-bottom: 20px;
+        color: #4d4d4d;
+        text-align: left; /* Aligns all text in this section to the left */
+        width: 100%;
+    }
+    
+    .new_denture-image-section {
+        width: 100%; /* Ensure the image section takes full width */
+        display: flex;
+        justify-content: flex-start; /* Aligns image to the left */
+        padding-top: 10px;
+    }
+    
+    .new_denture-image-section img {
+        width: 100%;
+        max-width: 300px; /* Limit image size */
+        max-height: 300px;
+        height: auto;
+        border-radius: 10px;
+        margin-left: 15px;
+    }
+    
+    .new_denture-large-text {
+        padding-bottom: 20px;
+    }
+    
+    .new_denture-small-text {
+        font-size: 18px;
+    }
+    
+    .new_denture-number {
+        color: #ffc900;
+        font-size: 25px;
+    }
+    .new_denture_title_section{
+        color:#ffc900;
+        margin-left:20px;
+        font-size:35px;
+        font-weight: 600;
     }
 }
