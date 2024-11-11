@@ -2318,7 +2318,7 @@ section {
         display: block;        
     }
     .landing-page-section{
-        height: 1300px;
+        height: 1380px;
     }
     
     .header_wrapper {
@@ -2391,7 +2391,13 @@ section {
         width: 45px;
         height: 45px;
         margin-left: 2px;
-        margin-bottom: 20px;
+        margin-bottom: 65px;
+    }
+    .special_time_icon_css{
+        margin-bottom: 90px !important;
+    }
+    .special_calender_icon_css{
+        margin-bottom: 55px !important;
     }
     .info-item i {
         width: 55px;
@@ -2417,12 +2423,16 @@ section {
     }
     .another_span_info_text{
         font-size: 19px;    
-        line-height: 0.9;
+        
     }
     .info-subtext {
-        font-size: 17px;
+        font-size: 18px;
+        margin-bottom: -15px;
     }
-
+    .main_sub_info_text{
+        line-height: 0.9;
+        max-height: 50px;
+    }
     .post_slide {
         margin:15px;
         padding-bottom: 100px;
