@@ -2411,7 +2411,10 @@ section {
     .info-text strong {
         font-size: 20px;
     }
-    
+    .another_span_info_text {
+        color: inherit; /* Keeps the color consistent */
+        -webkit-user-select: none; /* Prevents auto-linking in Safari */
+    }
     .another_span_info_text{
         font-size: 19px;    
         line-height: 0.9;
