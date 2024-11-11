@@ -1155,7 +1155,11 @@ section {
     height: 250px !important;
 
 }
-
+.card {
+    max-width: 295px;
+    max-height: 150px;
+    margin: 0 auto;
+}
 .waze-icon {
     bottom: 15px;
     right: 22px;
@@ -2258,6 +2262,10 @@ section {
 }
 
 @media (max-width:480px){
+    .payment_h1_title{
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
     .navbar-toggler {
         width: 40px;            
         height: 40px;            
