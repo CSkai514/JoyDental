@@ -1,5 +1,7 @@
 /* General Styles */
-
+/* *{
+    outline: 1px solid red;
+    } */
 body {
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -903,7 +905,7 @@ section {
 
 .hero-section {
     background-color: #e5f7ff; /* Light background color */
-    padding: 50px 0; /* Vertical padding */
+
 }
 
 .hero-content {
@@ -2216,6 +2218,7 @@ section {
         font-size: 18px;
     }
     .toggle-icon-circle{
+        display: none;
         width: 46px;
         height:44px;
         min-width: 46px;
