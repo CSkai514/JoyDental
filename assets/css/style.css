@@ -1996,6 +1996,9 @@ section {
     margin: 5px 0 20px;
 }
 
+.special_time_icon_css{
+    margin-bottom: 44px;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
