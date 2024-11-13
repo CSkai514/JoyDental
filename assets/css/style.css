@@ -569,7 +569,7 @@ section {
 .visa_img_top{
     width: auto;
     margin-right: 10px; /* Space between images */
-    height: 40px;
+    height: 36px;
 }
 .card-body {
     height: 180px; /* Set a fixed height for the card body */
