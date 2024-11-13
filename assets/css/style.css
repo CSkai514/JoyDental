@@ -1999,7 +1999,9 @@ section {
 .special_time_icon_css{
     margin-bottom: 44px;
 }
-
+.special_call_icon_css{
+    margin-bottom: 36px;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .denture-card-content {
