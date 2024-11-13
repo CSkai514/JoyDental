@@ -1705,7 +1705,7 @@ section {
 
 :root {
     --cards: 3; /* Updated to reflect the number of cards */
-    --cardHeight: 87vh;
+    --cardHeight: 80vh;
     --cardTopPadding: 1.5em;
     --cardMargin: 4vw;
 }
@@ -1722,8 +1722,8 @@ section {
 }
 
 .denture-card-scroll {
-    position: sticky;
-    top: 150px; /* Adjust as needed for spacing from the navbar */
+    /* position: sticky;
+    top: 150px;  */
     padding-top: calc(var(--index) * var(--cardTopPadding));
 }
 
