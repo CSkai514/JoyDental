@@ -6,7 +6,7 @@ Theme color: #ffca0a
 actual logo yellow: ffc900
 
 logo dark grey client mentioned: 404040   (<-not this) ,  this -->  4d4d4d 
-light grey i use : 4:09 PM 4/11/2024
+light grey i use :
 
 
 Font-family: (find this)- Spline Sans
