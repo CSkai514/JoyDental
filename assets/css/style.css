@@ -536,8 +536,9 @@ section {
 }
 
 .card_container{
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto;
+    max-height: 300px;
 }
 
 .card:hover {
@@ -545,35 +546,46 @@ section {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
     background-color: #e1e1e1; 
 }
-
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 122px;
+    text-align: center;
+    padding-top: 10px; /* Adjust as needed */
+}
 /* Card title styling */
 .card-title {
     font-size: 20px;
     font-weight: bold;
     color: #4d4d4d  ; /* Navy blue for titles */
-    margin-bottom: 15px;
+    margin: 0 auto;
+    align-self: flex-start; 
+    padding-top: 12px;
+    width: 100%; 
+    text-align: center;
 }
 
 /* Card text styling */
 .card-text {
     font-size: 16px;
     color: #4a4a4a; /* Darker gray for text */
+
 }
 
 /* Image inside card */
 .card-img-top {
     width: auto;
     margin-right: 10px; /* Space between images */
-    height: 58px;
+    height: 58px;   
 }
 .visa_img_top{
     width: auto;
     margin-right: 10px; /* Space between images */
-    height: 36px;
+    height: 30px;
 }
-.card-body {
-    height: 180px; /* Set a fixed height for the card body */
-}
+
+
 
 /* Responsive design for cards */
 @media (max-width: 768px) {
@@ -724,8 +736,6 @@ section {
 }
 
 
-
-
 /* end slideshow section for brand */
 .number {
     font-weight: bold;
@@ -805,11 +815,12 @@ section {
 /* Hover effect for background and border animation */
 .treatment-item:hover {
     border-top-right-radius: 10px; /* Keep rounded corners on hover */
-    border-bottom-left-radius: 10px;
+    border-bottom-left-radius:60px;
     border-top-left-radius: 10px; /* Keep rounded corners on hover */
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius:60px;
     background-color: #ffc900;
     color: #fff;
+    
 }
 
 /* Expand borders on hover */
@@ -836,6 +847,7 @@ section {
 }
 
 .treatment-item i {
+    
     font-size: 58px;
     flex: 1; /* Allow the text to grow and fill available space */
 }
@@ -849,6 +861,7 @@ section {
 
 /* Show icon on hover */
 .treatment-item:hover .icon {
+    border-radius: 50%;
     opacity: 1; /* Show icon on hover */
     transform: translateX(0); /* Move to original position */
 }
@@ -2001,6 +2014,10 @@ section {
 }
 .special_call_icon_css{
     margin-bottom: 36px;
+}
+
+.footer_container{
+    max-width: 1460px;
 }
 /* Responsive Design */
 @media (max-width: 768px) {
