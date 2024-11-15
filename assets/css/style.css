@@ -160,6 +160,12 @@ section {
     margin-left: 10px;
     border-bottom: 1px solid #dee2e6; 
 }
+
+.treatment-p-wording{
+    font-weight: 700;
+}
+
+
 .offcanvas-body .navbar-nav .nav-item{
     border-bottom: 1px solid #d1d2d381; 
 }
@@ -767,8 +773,8 @@ section {
 
 .treatment_h1_title{
     color: #ffc900;
-    font-weight: 600;
-    font-size: 60px;
+    font-weight: 700;
+    font-size: 63px;
     padding-bottom: 60px;
 }
 
@@ -839,11 +845,11 @@ section {
 }
 
 .treatment-item p {
-    font-size: 38px;
+    font-size: 41px;
     text-align: left; /* Align text to the left */
     color: #4d4d4d  ; /* Set text color to black */
     flex: 1; /* Allow the text to grow and fill available space */
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .treatment-item i {
@@ -2384,8 +2390,8 @@ section {
         padding: 3px;
     }
     .treatment-item p {
-        font-size: 20px !important;
-        font-weight: 600;
+        font-size: 25px !important;
+        font-weight: 700;
     }
 
     .treatment-item img {
