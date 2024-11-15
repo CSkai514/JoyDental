@@ -906,6 +906,11 @@ section {
         font-size: 40px;
         padding-bottom: 40px;
     }
+    .treatment-item:hover {
+        border-bottom-left-radius:25px;
+        border-bottom-right-radius:25px;
+        
+    }
     
 }
 
@@ -920,6 +925,11 @@ section {
     }
     .treatment-item:hover .icon{
         margin-right: 8px;
+    }
+    .treatment-item:hover {
+        border-bottom-left-radius:25px;
+        border-bottom-right-radius:25px;
+        
     }
 }
 
