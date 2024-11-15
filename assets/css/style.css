@@ -916,7 +916,7 @@ section {
     }
 }
 
-@media (max-width:480px){
+@media (min-width:413px) and (max-width:480px){
     .item_container_div{
         padding-inline: 25px !important;
     }
@@ -937,6 +937,8 @@ section {
         font-size: 13px;
     }
 }
+
+
 
 .hero-section {
     background-color: #e5f7ff; /* Light background color */
@@ -1013,7 +1015,7 @@ section {
     max-width: 1820px;
 }
 
-@media (max-width:480px){
+@media (min-width:413px) and (max-width:480px){
     .thebox_whyus{
         padding-left: 15px !important;
     }
@@ -1160,7 +1162,7 @@ section {
   /* .right-footer-section{
     padding-left: 400px;
 } */
-@media (max-width:480px){
+@media (min-width:413px) and (max-width:480px){
     .footer-link{
         font-size: 18px;
         margin-left: 15px;
@@ -2182,7 +2184,15 @@ section {
         min-height: 40px;
     }
 }
-@media (max-width: 412px){
+@media(max-width:380px){
+    .card {
+        margin-left: 3px !important;
+    }
+    .payment_h1_title {
+        font-size: 21px !important;
+    }
+}
+@media (min-width: 381px) and (max-width: 412px){
     .card {
         width: 300px;
         height: 180px;
@@ -2225,7 +2235,7 @@ section {
     }
 }
 
-@media (max-width:480px){
+@media (min-width:413px) and (max-width:480px){
     .navbar-brand {
         margin-bottom: -70px;
         height: 180px;
@@ -2353,7 +2363,7 @@ section {
 .new_mobile_treatment_card_section{
     display: none;
 }
-@media (max-width:480px){
+@media (min-width:413px) and (max-width:480px){
     .new_mobile_treatment_card_section{
         display: block;
     }
