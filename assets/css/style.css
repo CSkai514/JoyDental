@@ -2390,7 +2390,7 @@ section {
         padding: 3px;
     }
     .treatment-item p {
-        font-size: 25px !important;
+        font-size: 23px !important;
         font-weight: 700;
         line-height: 1.1;
     }
@@ -2399,7 +2399,6 @@ section {
         width: 55px;
         height: 55px;
     }
-
 
     .insta-button{
         padding: 15px 15px;
