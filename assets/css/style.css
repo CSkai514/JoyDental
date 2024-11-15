@@ -916,7 +916,7 @@ section {
     }
 }
 
-@media (min-width:413px) and (max-width:480px){
+@media (max-width:480px){
     .item_container_div{
         padding-inline: 25px !important;
     }
@@ -1015,7 +1015,7 @@ section {
     max-width: 1820px;
 }
 
-@media (min-width:413px) and (max-width:480px){
+@media (max-width:480px){
     .thebox_whyus{
         padding-left: 15px !important;
     }
@@ -1162,7 +1162,7 @@ section {
   /* .right-footer-section{
     padding-left: 400px;
 } */
-@media (min-width:413px) and (max-width:480px){
+@media (max-width:480px){
     .footer-link{
         font-size: 18px;
         margin-left: 15px;
@@ -2191,8 +2191,12 @@ section {
     .payment_h1_title {
         font-size: 21px !important;
     }
+    .card-content {
+        max-width: 100%;
+    }
 }
 @media (min-width: 381px) and (max-width: 412px){
+
     .card {
         width: 300px;
         height: 180px;
@@ -2235,7 +2239,7 @@ section {
     }
 }
 
-@media (min-width:413px) and (max-width:480px){
+@media (max-width:480px){
     .navbar-brand {
         margin-bottom: -70px;
         height: 180px;
@@ -2363,7 +2367,7 @@ section {
 .new_mobile_treatment_card_section{
     display: none;
 }
-@media (min-width:413px) and (max-width:480px){
+@media (max-width:480px){
     .new_mobile_treatment_card_section{
         display: block;
     }
