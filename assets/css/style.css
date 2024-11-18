@@ -182,7 +182,13 @@ section {
     justify-content: center;
     align-items: center;
 }
-
+.aboutus-section{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5f7ff; /* Light background color */
+}
 /* .hero-section h1 {
     font-size: 3rem;
 } */
@@ -299,6 +305,15 @@ section {
     }
     .navbar-nav .nav-link.active{
         background-color: rgba(247, 246, 245, 0.884);
+    }
+    .aboutus-section{
+        height: 600px;
+    }
+    .aboutus-section .hero-title{
+        line-height: 0.98 !important;
+    }
+    .aboutus-section .hero-subtitle{
+        margin-top: 137px;
     }
 }
 
@@ -975,7 +990,10 @@ section {
 
 .section_why_choose_us {
     background-color: #f8f9fa; /* Light background for the section */
-    padding: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: 10px;
     border-radius: 10px;
 }
 
