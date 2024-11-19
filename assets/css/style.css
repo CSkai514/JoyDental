@@ -865,6 +865,7 @@ section {
     color: #4d4d4d  ; /* Set text color to black */
     flex: 1; /* Allow the text to grow and fill available space */
     font-weight: 700;
+    margin-top: 12px;
 }
 
 .treatment-item i {
@@ -2441,6 +2442,7 @@ section {
         font-size: 23px !important;
         font-weight: 700;
         line-height: 1.1;
+        margin-top: 23px;
     }
 
     .treatment-item img {
