@@ -928,7 +928,7 @@ section {
         
     }
     .separator {
-        border-bottom: 1.7px solid #ffc900; /* Add a bottom border for separation */
+        border-bottom: 1px solid #ffc900; /* Add a bottom border for separation */
     }
 }
 
