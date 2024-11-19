@@ -203,7 +203,7 @@ section {
 
 .landing-content {
     position: relative; 
-    max-width: 1250px; 
+    max-width: 1200px; 
     margin: 0 auto;
     padding: 0; 
     display: flex;
@@ -214,7 +214,7 @@ section {
 
 /* Landing Heading Styles */
 .landing-heading {
-    font-size: 100px;
+    font-size: 110px;
     color: #4d4d4d;
     font-weight: 700;
     position: relative; 
@@ -242,17 +242,36 @@ section {
 
 .image-container {
     position: absolute;
-    right: 0;
+    right: -304px;
     z-index: 1 !important;
     transform: translate(-55%, 5%);
     mask-image: linear-gradient(to top, #ffffff00 5%, #fffffff5 50%); 
 }
 
-.right-image {
-    width: 350px;
-    max-width: 100%;
+@media(min-width:1500px){
+    .image-container {
+        right: -334px;
+    }
 }
 
+.accordion_faq_use{
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Ensure vertical stacking of elements */
+    align-items: center; /* Center items horizontally */
+}
+.right-image {
+    width: 480px;
+    max-width: 100%;
+}
+.contact-info {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start;
+    margin-top: 140px;
+    width: 107%;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
 .header-gradient {
     position: absolute;
     top: 60px;
@@ -318,15 +337,7 @@ section {
 }
 
 /* Contact Info Section */
-.contact-info {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: flex-start;
-    margin-top: 40px;
-    width: 107%;
-    gap: 20px;
-    flex-wrap: wrap; 
-}
+
 
 /* Individual Info Item */
 .info-item {
@@ -353,8 +364,8 @@ section {
 }
 
 .info-item img{
-    width: 90px;
-    height: 90px;
+    width: 50px;
+    height: 50px;
     margin-left:-23px;
     margin-right: 20px;
     margin-top: 7px;
@@ -801,6 +812,7 @@ section {
     padding: 40px;
     background: white;
     transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out; /* Safari compatibility */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -817,6 +829,7 @@ section {
     position: absolute;
     border: 0px solid #fff;
     transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out; /* Safari compatibility */
     border-radius: 10px; /* Added rounded corners for border */
 }
 
@@ -878,7 +891,9 @@ section {
 .icon {
     opacity: 0; /* Initially hidden */
     transform: translateX(30px); /* Start slightly to the right */
+    -webkit-transform: translateX(30px); /* Safari compatibility */
     transition: opacity 0.5s ease, transform 0.5s ease; /* Increase transition duration */
+    -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
     margin-left: 10px; /* Space between text and icon */
 }
 
@@ -887,6 +902,7 @@ section {
     border-radius: 50%;
     opacity: 1; /* Show icon on hover */
     transform: translateX(0); /* Move to original position */
+    -webkit-transform: translateX(0);
 }
 
 .separator {
@@ -1897,6 +1913,7 @@ section {
 
 .accordion {
     border: none;
+    width: 100%;
   }
   
   .denture_faq_card {
@@ -1905,12 +1922,13 @@ section {
   
   .accordion-button {
     display: flex;
-    justify-content: space-between;
     font-weight: bold;
     font-size: 35px;
     color: #4d4d4d ;
     /* background-color: #f8f9fa; */
-    padding: 50px;
+    /* padding: 50px; */
+    padding-top:40px;
+    padding-bottom: 40px;
     border: none;
     width: 100%;
   }
@@ -2054,8 +2072,13 @@ section {
 }
 
 .special_time_icon_css{
-    margin-bottom: 44px;
+    margin-bottom: 58px;
 }
+
+.special_calender_icon_css{
+    margin-bottom: 34px;
+}
+
 .special_call_icon_css{
     margin-bottom: 36px;
 }
@@ -2329,6 +2352,11 @@ section {
     }
     .accordion-button{
         font-size: 19px;
+        width: 85%;
+  
+    }
+    .accordion{
+        width: 85%;
     }
     .toggle-icon-circle{
         display: none;
