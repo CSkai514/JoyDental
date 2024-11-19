@@ -534,6 +534,7 @@ section {
     .info-divider {
         width: 88%;
         margin-left: 10px;
+        height: 1px;
     }
     .p_we_style{
         font-size: 18px;
