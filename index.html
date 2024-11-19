@@ -707,5 +707,18 @@ document.querySelectorAll('.coming-soon-btn').forEach(function(button) {
     });
 });
 </script>
+<script>
+    document.addEventListener('touchstart', function () {
+    const elements = document.querySelectorAll('.treatment-item');
+    elements.forEach(item => {
+        item.classList.remove('hover');
+    });
+});
+document.querySelectorAll('.treatment-item').forEach(item => {
+    item.addEventListener('touchstart', function () {
+        item.classList.add('hover');
+    });
+});
+</script>
 </body>
 </html>

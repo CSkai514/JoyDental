@@ -164,7 +164,20 @@ section {
 .treatment-p-wording{
     font-weight: 700;
 }
-
+.treatment-item:hover, .treatment-item:active {
+    border-top-right-radius: 10px; /* Keep rounded corners on hover */
+    border-bottom-left-radius: 60px;
+    background-color: #ffc900;
+    color: #fff;
+}
+@media (hover: hover) and (pointer: fine) {
+    .treatment-item:hover::before,
+    .treatment-item:hover::after {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+}
 
 .offcanvas-body .navbar-nav .nav-item{
     border-bottom: 1px solid #d1d2d381; 
