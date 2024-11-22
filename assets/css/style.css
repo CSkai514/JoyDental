@@ -769,7 +769,7 @@ section {
         transform: translateX(0); 
     }
     100% { 
-        transform: translateX(calc(-250px * 7)); 
+        transform: translateX(-20%); 
     }
 }
 
