@@ -1673,6 +1673,9 @@ section {
     width: fit-content;
     max-width: 360px;
 }
+.denture_image-container_teethwhiting .denture-right-image{
+    margin-left: 14px;
+}
 .denture_image-container_braces{
     position: absolute;
     right: 0;
