@@ -1673,6 +1673,18 @@ section {
     width: fit-content;
     max-width: 360px;
 }
+.denture_image-container_braces{
+    position: absolute;
+    right: 0;
+    z-index: 1 !important;
+    background-color: #ffc900;
+    border-radius: 20px;
+    padding: 1rem;
+    margin-top: 150px;
+    transform: rotate(5.5deg);
+    width: fit-content;
+    max-width: 360px;
+}
 .denture_image-container_crown{
     position: absolute;
     right: 0;
@@ -2148,6 +2160,10 @@ section {
         left: 0;
         margin-top: 450px;
     }
+    .denture_image-container_braces{
+        left: 0;
+        margin-top: 450px;
+    }
     .denture_image-container_crown{
         left: 0;
         margin-top: 450px;
@@ -2321,8 +2337,18 @@ section {
         left: 5px;
     }
     .denture_image-container_teethwhiting{
-        left: 0;
+        left: 12px;
         margin-top: 450px;
+    }
+    .denture_image-container_teethwhiting .denture-right-image{
+        margin-left: 14px;
+    }
+    .denture_image-container_braces{
+        left: 12px;
+        margin-top: 415px;
+    }
+    .denture_image-container_braces .denture-right-image{
+        margin-left: 1px;
     }
     .denture_image-container_crown{
         left: 0;
