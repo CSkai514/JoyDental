@@ -760,8 +760,8 @@ section {
     max-height: 100%;
     object-fit: contain; /* Ensure images fit without distortion */
 }
-.post_slide:hover .slide-track {
-    animation-play-state: paused; /* Pauses the animation on hover */
+.post_slide:active .slide-track {
+    animation-play-state: paused; 
 }
 
 @keyframes scroll {
