@@ -343,6 +343,7 @@ section {
     }
     .aboutus-section .hero-title{
         line-height: 0.98 !important;
+        font-size: 50px !important;
     }
     .aboutus-section .hero-subtitle{
         margin-top: 137px;
