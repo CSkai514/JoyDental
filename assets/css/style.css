@@ -1179,20 +1179,20 @@ section {
   
   .footer-location-link, .footer-contact {
     font-size: 20px;
-    color: #333;
+    color: #4a4a4a;
     text-decoration: none;
     margin-left: 50px;
   }
 
 .footer-social-link{
     font-size: 28px;
-    color: #333;
+    color: #4a4a4a;
     text-decoration: none;
 }
 
 .footer-social-link i{
     border-radius: 50%;
-    border: 1px solid #333;
+    border: 1px solid #4a4a4a;
     padding: 10px;
     height: 50px;
     width: 50px;
@@ -1552,7 +1552,7 @@ section {
 .owl-carousel .item .caption {
     font-size: 40px; /* Caption font size */
     font-weight: 700; /* Slightly bold */
-    color: #333; /* Text color */
+    color: #4a4a4a; /* Text color */
     text-align: center; /* Center align the text */
     margin-top: 10px; /* Space between image and caption */
 }
@@ -2441,7 +2441,7 @@ section {
     .owl-carousel .item .caption {
         font-size: 16px;
         font-weight: 600; 
-        color: #333;
+        color: #4a4a4a;
         text-align: center;
         margin-top: 10px;
     }
