@@ -260,6 +260,9 @@ section {
     transform: translate(-55%, 5%);
     mask-image: linear-gradient(to top, #ffffff00 5%, #fffffff5 50%); 
 }
+.location_content_section .landing-subheading{
+    padding-top: 30px;
+}
 
 @media(min-width:1500px){
     .image-container {
@@ -2532,6 +2535,9 @@ section {
     .landing-subheading {
         font-size: 18px;
         color: #4a4a4a;
+    }
+    .location_content_section .landing-subheading{
+        padding-top: 0px;
     }
     .info-item{
         padding: 0;
