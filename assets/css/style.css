@@ -346,11 +346,25 @@ section {
     }
     .aboutus-section .hero-title{
         line-height: 0.98 !important;
-        font-size: 50px !important;
+        font-size: 46px !important;
     }
     .aboutus-section .hero-subtitle{
         margin-top: 137px;
     }
+}
+@media (min-width:321px) and (max-width: 400px) {
+    .aboutus-section .hero-title{
+        font-size: 40px !important;
+    }
+}
+@media (min-width:280px) and (max-width: 320px) {
+    .aboutus-section .hero-title{
+        font-size: 34px !important;
+    }
+}
+
+.aboutus-section .hero-title{
+    font-size: 80px;
 }
 
 /* Contact Info Section */
