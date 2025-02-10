@@ -148,8 +148,22 @@
             </h1>
             <p class="landing-subheading">Enhance Your Confidence, Health, and Happiness.</p> 
             <div class="image-container">
+                <!-- Loader -->
+                <div class="hourglassBackground">
+                  <div class="hourglassContainer">
+                    <div class="hourglassCurves"></div>
+                    <div class="hourglassCapTop"></div>
+                    <div class="hourglassGlassTop"></div>
+                    <div class="hourglassSand"></div>
+                    <div class="hourglassSandStream"></div>
+                    <div class="hourglassCapBottom"></div>
+                    <div class="hourglassGlass"></div>
+                  </div>
+                </div>
+                
+                <!-- Image -->
                 <img src="assets/image/women_smite_picture2.png" alt="Woman" class="right-image">    
-            </div>
+              </div>
             <div class="header-gradient"></div>
             <div class="contact-info">
                 
@@ -738,6 +752,30 @@ document.querySelectorAll('.treatment-item').forEach(item => {
     });
 });
 </script>
-
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const imageContainer = document.querySelector('.image-container');
+      const loader = imageContainer.querySelector('.hourglassBackground');
+      const img = imageContainer.querySelector('.right-image');
+    
+      // Check if image is already loaded
+      if (img.complete) {
+        loader.style.display = 'none';
+        img.classList.add('loaded');
+      }
+    
+      // Handle image load
+      img.addEventListener('load', function() {
+        loader.style.display = 'none';
+        img.classList.add('loaded');
+      });
+    
+      // Optional: Handle image error
+      img.addEventListener('error', function() {
+        loader.style.display = 'none';
+        console.error('Failed to load image');
+      });
+    });
+    </script>
 </body>
 </html>
