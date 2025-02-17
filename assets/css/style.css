@@ -3323,3 +3323,9 @@ section {
   .right-image.loaded {
     opacity: 1;
   }  
+  @media only screen and (max-width: 480px) {
+    .closed-info {
+      display: block;
+      padding-top: 1px;
+    }
+  }
